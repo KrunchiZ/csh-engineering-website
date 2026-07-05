@@ -1,23 +1,16 @@
 /* ============================================================
-   CSH Engineering — Global Styles
+   CSH Engineering Services & Trading — Global Styles (Light)
    ============================================================ */
 
 /* --- Tokens --- */
 :root {
-	--csh-dark: #0f1923;
-	/* near-black, primary bg */
-	--csh-navy: #1a2a3a;
-	/* card / section bg */
-	--csh-steel: #273549;
-	/* border, subtle bg */
-	--csh-amber: #e82020;
-	/* primary accent */
-	--csh-amber-dim: #b81818;
-	/* hover state */
-	--csh-light: #f0f4f8;
-	/* body text on dark */
-	--csh-muted: #dfe5eb;
-	/* secondary text */
+	--csh-red: #cc2222;
+	--csh-red-dark: #aa1a1a;
+	--csh-dark: #1a1a1a;
+	--csh-grey-100: #f5f5f5;
+	--csh-grey-200: #e8e8e8;
+	--csh-grey-400: #aaaaaa;
+	--csh-grey-600: #666666;
 	--csh-white: #ffffff;
 	--radius: 4px;
 	--transition: 0.2s ease;
@@ -35,7 +28,7 @@ html {
 }
 
 body {
-	background-color: var(--csh-light);
+	background-color: var(--csh-grey-100);
 	color: var(--csh-dark);
 	font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
 	font-size: 0.95rem;
@@ -56,50 +49,61 @@ h6 {
 }
 
 a {
-	color: var(--csh-amber);
+	color: var(--csh-red);
 	text-decoration: none;
 }
 
 a:hover {
-	color: var(--csh-amber-dim);
+	color: var(--csh-red-dark);
 }
 
 /* --- Navbar --- */
 .navbar {
-	background-color: var(--csh-dark) !important;
-	border-bottom: 2px solid var(--csh-amber);
-	padding-top: 0.6rem;
-	padding-bottom: 0.6rem;
+	background-color: var(--csh-white) !important;
+	border-bottom: 2px solid var(--csh-red);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
-.navbar-brand {
+/* Logo image */
+.navbar-logo {
+	height: 40px;
+	width: auto;
+	display: block;
+}
+
+/* Company name next to logo */
+.navbar-company {
 	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
-	font-size: 1.4rem;
+	font-size: 1rem;
 	font-weight: 700;
-	letter-spacing: 0.05em;
-	color: var(--csh-white) !important;
+	color: var(--csh-dark);
+	letter-spacing: 0.04em;
+	line-height: 1.25;
+	white-space: nowrap;
 }
 
-.navbar-brand span {
-	color: var(--csh-amber);
+.navbar-brand:hover .navbar-company {
+	color: var(--csh-red);
 }
 
 .nav-link {
-	color: var(--csh-muted) !important;
-	font-size: 0.85rem;
-	font-weight: 500;
-	letter-spacing: 0.06em;
+	color: var(--csh-grey-600) !important;
+	font-size: 0.78rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	padding: 0.4rem 0.75rem !important;
+	padding: 0.4rem 0.7rem !important;
 	transition: color var(--transition);
 }
 
 .nav-link:hover,
 .nav-link.active {
-	color: var(--csh-amber) !important;
+	color: var(--csh-red) !important;
 }
 
-/* Contact badges in navbar */
+/* Contact badges */
 .contact-badges {
 	gap: 0.4rem;
 }
@@ -108,10 +112,10 @@ a:hover {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: 32px;
-	height: 32px;
+	width: 30px;
+	height: 30px;
 	border-radius: var(--radius);
-	font-size: 1rem;
+	font-size: 0.95rem;
 	transition: opacity var(--transition), transform var(--transition);
 	color: var(--csh-white);
 }
@@ -127,7 +131,7 @@ a:hover {
 }
 
 .contact-badge.email {
-	background: var(--csh-steel);
+	background: #888888;
 }
 
 .contact-badge.tel {
@@ -144,52 +148,38 @@ a:hover {
 
 /* --- Hero --- */
 .hero {
-	background-color: var(--csh-light);
-	border-bottom: 1px solid var(--csh-steel);
+	background-color: var(--csh-white);
+	border-bottom: 1px solid var(--csh-grey-200);
 	padding: 5rem 0 4rem;
 	position: relative;
 	overflow: hidden;
 }
 
-.hero::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: repeating-linear-gradient(90deg,
-			transparent,
-			transparent 60px,
-			rgba(232, 160, 32, 0.03) 60px,
-			rgba(232, 160, 32, 0.03) 61px);
-	pointer-events: none;
-}
-
 .hero-eyebrow {
-	font-size: 0.75rem;
-	font-weight: 600;
-	letter-spacing: 0.15em;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
 	text-transform: uppercase;
-	color: var(--csh-amber);
-	margin-bottom: 1rem;
+	color: var(--csh-red);
+	margin-bottom: 1rem;	
 }
 
 .hero h1 {
 	font-size: clamp(2.2rem, 5vw, 3.8rem);
 	line-height: 1.1;
 	margin-bottom: 1.25rem;
+	color: var(--csh-dark);
 }
 
 .hero h1 em {
 	font-style: normal;
-	color: var(--csh-amber);
+	color: var(--csh-red-dark);
 }
 
 .hero-sub {
-	color: var(--csh-steel);
+	color: var(--csh-grey-600);
 	font-size: 1rem;
-	max-width: 520px;
+	max-width: 640px;
 	margin-bottom: 2rem;
 }
 
@@ -198,32 +188,33 @@ a:hover {
 	gap: 2.5rem;
 	margin-top: 2.5rem;
 	padding-top: 2rem;
-	border-top: 1px solid var(--csh-steel);
+	border-top: 1px solid var(--csh-grey-200);
 }
 
 .hero-stat-num {
 	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
-	color: var(--csh-amber);
+	color: var(--csh-red);
 	line-height: 1;
 }
 
 .hero-stat-label {
-	font-size: 0.75rem;
-	color: var(--csh-steel);
+	font-size: 0.72rem;
+	color: var(--csh-grey-600);
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 	margin-top: 0.2rem;
 }
 
-/* --- Section --- */
+/* --- Sections --- */
 .section {
 	padding: 4rem 0;
+	background: var(--csh-white);
 }
 
 .section-alt {
-	background-color: var(--csh-muted);
+	background: var(--csh-grey-100);
 }
 
 .section-label {
@@ -231,183 +222,278 @@ a:hover {
 	font-weight: 700;
 	letter-spacing: 0.18em;
 	text-transform: uppercase;
-	color: var(--csh-amber);
+	color: var(--csh-red);
 	margin-bottom: 0.5rem;
 }
 
 .section-title {
 	font-size: clamp(1.6rem, 3vw, 2.2rem);
 	margin-bottom: 0.5rem;
+	color: var(--csh-dark);
 }
 
 .section-sub {
-	color: var(--csh-steel);
+	color: var(--csh-grey-600);
 	font-size: 0.9rem;
 	margin-bottom: 2.5rem;
 }
 
-/* --- Product Cards (highlight) --- */
+/* --- Brands strip --- */
+.brands-strip {
+	padding: 1.75rem 0;
+	background: var(--csh-white);
+	background-image: url('../images/banner_homepage.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-top: 1px solid var(--csh-grey-200);
+	border-bottom: 1px solid var(--csh-grey-200);
+	z-index: 1;
+	position: relative;
+}
+
+.brands-strip::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.brands-strip .container {
+	position: relative;
+	z-index: 1;
+}
+
+.brands-strip-label {
+	font-size: 1.0rem;
+	font-weight: 700;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: var(--csh-white);
+	margin-bottom: 1rem;
+}
+
+.brand-pill {
+	display: inline-block;
+	padding: 0.25rem 0.8rem;
+	border: 1px solid var(--csh-grey-200);
+	border-radius: 2px;
+	font-size: 0.76rem;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	color: var(--csh-dark);
+	background: var(--csh-white);
+	margin: 0.2rem;
+	transition: border-color var(--transition), color var(--transition);
+}
+
+.brand-pill:hover {
+	border-color: var(--csh-red);
+	color: var(--csh-red);
+}
+
+/* --- Product Cards --- */
 .product-card {
-	background: var(--csh-navy);
-	border: 1px solid var(--csh-steel);
+	background: var(--csh-white);
+	border: 1px solid var(--csh-grey-200);
 	border-radius: var(--radius);
 	overflow: hidden;
-	transition: border-color var(--transition), transform var(--transition);
+	transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
 	height: 100%;
 }
 
 .product-card:hover {
-	border-color: var(--csh-amber);
+	border-color: var(--csh-red);
+	box-shadow: 0 4px 12px rgba(204, 34, 34, 0.08);
 	transform: translateY(-2px);
 }
 
 .product-card img {
 	width: 100%;
 	height: 200px;
-	object-fit: cover;
+	object-fit: contain;
+	object-position: center;
+	background: var(--csh-grey-100);
+	padding: 8px;
 	display: block;
-	background: var(--csh-steel);
+	border-bottom: 1px solid var(--csh-grey-200);
 }
 
 .product-card-body {
-	padding: 1.25rem;
+	padding: 1.1rem;
 }
 
 .product-card-brand {
-	font-size: 0.7rem;
-	font-weight: 600;
+	font-size: 0.68rem;
+	font-weight: 700;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	color: var(--csh-amber);
+	color: var(--csh-red);
 	margin-bottom: 0.3rem;
 }
 
 .product-card-title {
-	font-size: 1rem;
+	font-size: 0.95rem;
 	font-weight: 700;
-	color: var(--csh-white);
+	color: var(--csh-dark);
 	margin-bottom: 0.5rem;
 	line-height: 1.3;
 }
 
 .product-card-desc {
-	font-size: 0.82rem;
-	color: var(--csh-muted);
+	font-size: 0.8rem;
+	color: var(--csh-grey-600);
 	margin: 0;
+}
+
+/* --- CTA Strip (red band) --- */
+.cta-strip {
+	background: var(--csh-red);
+	padding: 3rem 0;
+}
+
+.cta-strip .section-label {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.cta-strip .section-title {
+	color: var(--csh-white);
+}
+
+.cta-strip .section-sub {
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 0;
 }
 
 /* --- Buttons --- */
 .btn-csh {
-	background-color: var(--csh-amber);
+	background-color: var(--csh-red);
 	color: var(--csh-white);
 	font-weight: 700;
-	font-size: 0.82rem;
+	font-size: 0.8rem;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	border: none;
 	border-radius: var(--radius);
 	padding: 0.6rem 1.4rem;
+	display: inline-block;
 	transition: background-color var(--transition);
 }
 
 .btn-csh:hover {
-	background-color: var(--csh-amber-dim);
+	background-color: var(--csh-red-dark);
 	color: var(--csh-white);
 }
 
 .btn-csh-outline {
 	background-color: transparent;
-	color: var(--csh-navy);
+	color: var(--csh-red-dark);
 	font-weight: 700;
-	font-size: 0.82rem;
+	font-size: 0.8rem;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	border: 1px solid var(--csh-navy);
+	border: 1.5px solid var(--csh-dark);
 	border-radius: var(--radius);
 	padding: 0.6rem 1.4rem;
+	display: inline-block;
 	transition: background-color var(--transition), color var(--transition);
 }
 
 .btn-csh-outline:hover {
-	background-color: var(--csh-steel);
-	color: var(--csh-white);
+	background-color: var(--csh-grey-200);
+	color: var(--csh-red);
 }
 
-/* --- Brands strip --- */
-.brands-strip {
-	padding: 2rem 0;
-	border-top: 1px solid var(--csh-steel);
-	border-bottom: 1px solid var(--csh-steel);
-	background-color: var(--csh-muted);
-}
-
-.brands-strip-label {
-	font-size: 0.7rem;
-	letter-spacing: 0.15em;
+.btn-csh-white {
+	background-color: var(--csh-white);
+	color: var(--csh-red);
+	font-weight: 700;
+	font-size: 0.8rem;
+	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	color: var(--csh-amber);
-	margin-bottom: 1rem;
-}
-
-.brand-pill {
+	border: none;
+	border-radius: var(--radius);
+	padding: 0.6rem 1.4rem;
 	display: inline-block;
-	padding: 0.3rem 0.9rem;
-	border: 1px solid var(--csh-navy);
-	background-color: var(--csh-light);
-	border-radius: 2px;
-	font-size: 0.78rem;
-	font-weight: 600;
-	letter-spacing: 0.05em;
-	color: var(--csh-steel);
-	margin: 0.25rem;
-	transition: border-color var(--transition), color var(--transition);
+	transition: background-color var(--transition), color var(--transition);
 }
 
-.brand-pill:hover {
-	border-color: var(--csh-amber);
-	color: var(--csh-amber);
+.btn-csh-white:hover {
+	background-color: var(--csh-grey-100);
+	color: var(--csh-red);
 }
 
 /* --- Footer --- */
 .footer {
-	background-color: var(--csh-navy);
-	border-top: 2px solid var(--csh-amber);
+	background-color: var(--csh-dark);
+	border-top: 2px solid var(--csh-red);
 	padding: 2.5rem 0 1.5rem;
-	color: var(--csh-muted);
+	color: var(--csh-grey-400);
 	font-size: 0.82rem;
 }
 
-.footer-brand {
-	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 700;
-	color: var(--csh-white);
-	margin-bottom: 0.4rem;
+.footer-logo {
+	height: 36px;
+	width: auto;
 }
 
-.footer-brand span {
-	color: var(--csh-amber);
+.footer-nav-heading {
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #cccccc;
+	margin-bottom: 0.75rem;
+}
+
+.footer-link {
+	display: block;
+	color: var(--csh-grey-400);
+	font-size: 0.82rem;
+	margin-bottom: 0.35rem;
+	transition: color var(--transition);
+}
+
+.footer-link:hover {
+	color: var(--csh-red);
 }
 
 .footer-copy {
 	font-size: 0.75rem;
-	color: var(--csh-muted);
+	color: #555555;
 	margin-top: 1.5rem;
 	padding-top: 1rem;
-	border-top: 1px solid var(--csh-steel);
+	border-top: 1px solid #333333;
+}
+
+/* --- Modals --- */
+.modal-content {
+	background: var(--csh-white);
+	border: 1px solid var(--csh-grey-200);
+	border-radius: var(--radius);
+}
+
+.modal-header {
+	border-bottom: 1px solid var(--csh-grey-200);
+}
+
+.modal-footer {
+	border-top: 1px solid var(--csh-grey-200);
 }
 
 /* --- Utility --- */
-.text-amber {
-	color: var(--csh-amber);
+.text-red {
+	color: var(--csh-red);
 }
 
-.text-muted-csh {
-	color: var(--csh-muted);
+.text-muted-c {
+	color: var(--csh-grey-600);
 }
 
 .divider {
-	border-color: var(--csh-steel);
+	border-color: var(--csh-grey-200);
 	margin: 0;
 }
 
@@ -419,6 +505,7 @@ a:hover {
 
 	.hero-stats {
 		gap: 1.5rem;
+		flex-wrap: wrap;
 	}
 
 	.contact-badges {
@@ -426,12 +513,16 @@ a:hover {
 	}
 
 	.contact-badge {
-		width: 28px;
-		height: 28px;
+		width: 26px;
+		height: 26px;
 		font-size: 0.85rem;
 	}
 
 	.section {
 		padding: 2.5rem 0;
+	}
+
+	.cta-strip {
+		padding: 2rem 0;
 	}
 }
