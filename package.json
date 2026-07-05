@@ -1,0 +1,32 @@
+{
+  "name": "csh-engineering-website",
+  "version": "1.0.0",
+  "description": "website for CSH Engineering Services & Trading",
+  "keywords": [
+    "nodejs",
+    "csh engineering services & trading",
+    "website",
+    "frontend",
+    "csh",
+    "engineering"
+  ],
+  "homepage": "https://github.com/KrunchiZ/csh-engineering-website#readme",
+  "bugs": {
+    "url": "https://github.com/KrunchiZ/csh-engineering-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrunchiZ/csh-engineering-website.git"
+  },
+  "license": "ISC",
+  "author": "kaizhi3006@gmail.com",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}

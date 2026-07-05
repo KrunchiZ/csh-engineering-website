@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "IR SE Intellisys Display Board",
+    "category": "Air Compressor Controller",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned display board for Ingersoll Rand SE/SE Sierra Intellisys. Tested and verified functional.",
+    "images": [
+      "https://placehold.co/600x400?text=IR+Display+Board+1",
+      "https://placehold.co/600x400?text=IR+Display+Board+2"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Kaeser Sigma Control Main Board",
+    "category": "Air Compressor Controller",
+    "brand": "Kaeser",
+    "condition": "Reconditioned",
+    "description": "Reconditioned main controller board for Kaeser Sigma Control units. Tested under load.",
+    "images": ["https://placehold.co/600x400?text=Kaeser+Main+Board"]
+  },
+  {
+    "id": 3,
+    "name": "Horizontal Wrapper Control Panel",
+    "category": "Packaging Machine",
+    "brand": "TAM",
+    "condition": "Reconditioned",
+    "description": "Reconditioned electrical control panel for TAM horizontal flow wrapper. Includes PLC and HMI.",
+    "images": [
+      "https://placehold.co/600x400?text=Wrapper+Panel+1",
+      "https://placehold.co/600x400?text=Wrapper+Panel+2"
+    ]
+  }
+]

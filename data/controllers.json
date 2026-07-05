@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Ingersoll Rand SE/SE Sierra Intellisys Controller",
+    "brand": "Ingersoll Rand",
+    "brandUrl": "https://www.ingersollrand.com",
+    "partNumbers": ["39817655", "22128763"],
+    "description": "Intellisys controller for IR SE/SE Sierra series. Covers oil-free compressors and motor starters.",
+    "commonProblems": [
+      "Unable to press front keypad membrane button",
+      "Darkened LCD or display shows funny characters",
+      "No response from controller"
+    ],
+    "serviceLeadTime": "At least 7 working days",
+    "images": ["https://placehold.co/600x400?text=IR+SE+Intellisys"]
+  },
+  {
+    "id": 2,
+    "name": "Ingersoll Rand X Series Intellisys Controller",
+    "brand": "Ingersoll Rand",
+    "brandUrl": "https://www.ingersollrand.com",
+    "partNumbers": ["23474706", "54749135"],
+    "description": "Intellisys controller for IR X Series rotary screw air compressors.",
+    "commonProblems": [
+      "Display backlight failure",
+      "Communication fault between controller and drive",
+      "Keypad unresponsive"
+    ],
+    "serviceLeadTime": "At least 7 working days",
+    "images": ["https://placehold.co/600x400?text=IR+X+Series"]
+  },
+  {
+    "id": 3,
+    "name": "Kaeser Sigma Control Controller",
+    "brand": "Kaeser",
+    "brandUrl": "https://www.kaeser.com",
+    "partNumbers": ["7.3530.0", "7.4921.1"],
+    "description": "Sigma Control for Kaeser rotary screw compressors. Compatible with BS, CS, DS and FS series.",
+    "commonProblems": [
+      "SD card failure causing boot loop",
+      "Relay output failure",
+      "Display shows error on startup"
+    ],
+    "serviceLeadTime": "At least 10 working days",
+    "images": ["https://placehold.co/600x400?text=Kaeser+Sigma"]
+  }
+]

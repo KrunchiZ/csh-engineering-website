@@ -1,0 +1,437 @@
+/* ============================================================
+   CSH Engineering — Global Styles
+   ============================================================ */
+
+/* --- Tokens --- */
+:root {
+	--csh-dark: #0f1923;
+	/* near-black, primary bg */
+	--csh-navy: #1a2a3a;
+	/* card / section bg */
+	--csh-steel: #273549;
+	/* border, subtle bg */
+	--csh-amber: #e82020;
+	/* primary accent */
+	--csh-amber-dim: #b81818;
+	/* hover state */
+	--csh-light: #f0f4f8;
+	/* body text on dark */
+	--csh-muted: #dfe5eb;
+	/* secondary text */
+	--csh-white: #ffffff;
+	--radius: 4px;
+	--transition: 0.2s ease;
+}
+
+/* --- Base --- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--csh-light);
+	color: var(--csh-dark);
+	font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+	font-size: 0.95rem;
+	line-height: 1.65;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	color: var(--csh-dark);
+}
+
+a {
+	color: var(--csh-amber);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--csh-amber-dim);
+}
+
+/* --- Navbar --- */
+.navbar {
+	background-color: var(--csh-dark) !important;
+	border-bottom: 2px solid var(--csh-amber);
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+}
+
+.navbar-brand {
+	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	color: var(--csh-white) !important;
+}
+
+.navbar-brand span {
+	color: var(--csh-amber);
+}
+
+.nav-link {
+	color: var(--csh-muted) !important;
+	font-size: 0.85rem;
+	font-weight: 500;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	padding: 0.4rem 0.75rem !important;
+	transition: color var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+	color: var(--csh-amber) !important;
+}
+
+/* Contact badges in navbar */
+.contact-badges {
+	gap: 0.4rem;
+}
+
+.contact-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-radius: var(--radius);
+	font-size: 1rem;
+	transition: opacity var(--transition), transform var(--transition);
+	color: var(--csh-white);
+}
+
+.contact-badge:hover {
+	opacity: 0.85;
+	transform: translateY(-1px);
+	color: var(--csh-white);
+}
+
+.contact-badge.wa {
+	background: #25D366;
+}
+
+.contact-badge.email {
+	background: var(--csh-steel);
+}
+
+.contact-badge.tel {
+	background: #2196F3;
+}
+
+.contact-badge.wechat {
+	background: #07C160;
+}
+
+.contact-badge.line {
+	background: #00B900;
+}
+
+/* --- Hero --- */
+.hero {
+	background-color: var(--csh-light);
+	border-bottom: 1px solid var(--csh-steel);
+	padding: 5rem 0 4rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: repeating-linear-gradient(90deg,
+			transparent,
+			transparent 60px,
+			rgba(232, 160, 32, 0.03) 60px,
+			rgba(232, 160, 32, 0.03) 61px);
+	pointer-events: none;
+}
+
+.hero-eyebrow {
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: var(--csh-amber);
+	margin-bottom: 1rem;
+}
+
+.hero h1 {
+	font-size: clamp(2.2rem, 5vw, 3.8rem);
+	line-height: 1.1;
+	margin-bottom: 1.25rem;
+}
+
+.hero h1 em {
+	font-style: normal;
+	color: var(--csh-amber);
+}
+
+.hero-sub {
+	color: var(--csh-steel);
+	font-size: 1rem;
+	max-width: 520px;
+	margin-bottom: 2rem;
+}
+
+.hero-stats {
+	display: flex;
+	gap: 2.5rem;
+	margin-top: 2.5rem;
+	padding-top: 2rem;
+	border-top: 1px solid var(--csh-steel);
+}
+
+.hero-stat-num {
+	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--csh-amber);
+	line-height: 1;
+}
+
+.hero-stat-label {
+	font-size: 0.75rem;
+	color: var(--csh-steel);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin-top: 0.2rem;
+}
+
+/* --- Section --- */
+.section {
+	padding: 4rem 0;
+}
+
+.section-alt {
+	background-color: var(--csh-muted);
+}
+
+.section-label {
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--csh-amber);
+	margin-bottom: 0.5rem;
+}
+
+.section-title {
+	font-size: clamp(1.6rem, 3vw, 2.2rem);
+	margin-bottom: 0.5rem;
+}
+
+.section-sub {
+	color: var(--csh-steel);
+	font-size: 0.9rem;
+	margin-bottom: 2.5rem;
+}
+
+/* --- Product Cards (highlight) --- */
+.product-card {
+	background: var(--csh-navy);
+	border: 1px solid var(--csh-steel);
+	border-radius: var(--radius);
+	overflow: hidden;
+	transition: border-color var(--transition), transform var(--transition);
+	height: 100%;
+}
+
+.product-card:hover {
+	border-color: var(--csh-amber);
+	transform: translateY(-2px);
+}
+
+.product-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+	background: var(--csh-steel);
+}
+
+.product-card-body {
+	padding: 1.25rem;
+}
+
+.product-card-brand {
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--csh-amber);
+	margin-bottom: 0.3rem;
+}
+
+.product-card-title {
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--csh-white);
+	margin-bottom: 0.5rem;
+	line-height: 1.3;
+}
+
+.product-card-desc {
+	font-size: 0.82rem;
+	color: var(--csh-muted);
+	margin: 0;
+}
+
+/* --- Buttons --- */
+.btn-csh {
+	background-color: var(--csh-amber);
+	color: var(--csh-white);
+	font-weight: 700;
+	font-size: 0.82rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	border: none;
+	border-radius: var(--radius);
+	padding: 0.6rem 1.4rem;
+	transition: background-color var(--transition);
+}
+
+.btn-csh:hover {
+	background-color: var(--csh-amber-dim);
+	color: var(--csh-white);
+}
+
+.btn-csh-outline {
+	background-color: transparent;
+	color: var(--csh-navy);
+	font-weight: 700;
+	font-size: 0.82rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	border: 1px solid var(--csh-navy);
+	border-radius: var(--radius);
+	padding: 0.6rem 1.4rem;
+	transition: background-color var(--transition), color var(--transition);
+}
+
+.btn-csh-outline:hover {
+	background-color: var(--csh-steel);
+	color: var(--csh-white);
+}
+
+/* --- Brands strip --- */
+.brands-strip {
+	padding: 2rem 0;
+	border-top: 1px solid var(--csh-steel);
+	border-bottom: 1px solid var(--csh-steel);
+	background-color: var(--csh-muted);
+}
+
+.brands-strip-label {
+	font-size: 0.7rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: var(--csh-amber);
+	margin-bottom: 1rem;
+}
+
+.brand-pill {
+	display: inline-block;
+	padding: 0.3rem 0.9rem;
+	border: 1px solid var(--csh-navy);
+	background-color: var(--csh-light);
+	border-radius: 2px;
+	font-size: 0.78rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	color: var(--csh-steel);
+	margin: 0.25rem;
+	transition: border-color var(--transition), color var(--transition);
+}
+
+.brand-pill:hover {
+	border-color: var(--csh-amber);
+	color: var(--csh-amber);
+}
+
+/* --- Footer --- */
+.footer {
+	background-color: var(--csh-navy);
+	border-top: 2px solid var(--csh-amber);
+	padding: 2.5rem 0 1.5rem;
+	color: var(--csh-muted);
+	font-size: 0.82rem;
+}
+
+.footer-brand {
+	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: var(--csh-white);
+	margin-bottom: 0.4rem;
+}
+
+.footer-brand span {
+	color: var(--csh-amber);
+}
+
+.footer-copy {
+	font-size: 0.75rem;
+	color: var(--csh-muted);
+	margin-top: 1.5rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--csh-steel);
+}
+
+/* --- Utility --- */
+.text-amber {
+	color: var(--csh-amber);
+}
+
+.text-muted-csh {
+	color: var(--csh-muted);
+}
+
+.divider {
+	border-color: var(--csh-steel);
+	margin: 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+	.hero {
+		padding: 3rem 0 2.5rem;
+	}
+
+	.hero-stats {
+		gap: 1.5rem;
+	}
+
+	.contact-badges {
+		gap: 0.25rem;
+	}
+
+	.contact-badge {
+		width: 28px;
+		height: 28px;
+		font-size: 0.85rem;
+	}
+
+	.section {
+		padding: 2.5rem 0;
+	}
+}

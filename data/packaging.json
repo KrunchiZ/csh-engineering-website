@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Horizontal Flow Wrapper",
+    "category": "Horizontal Packing Machine",
+    "manufacturer": "TAM / Kawashima / China",
+    "description": "Packs products horizontally — bread, candy, biscuit, wafer, vegetables. Suitable for regular-shaped items on a conveyor.",
+    "models": ["TAM-HW300", "KW-450"],
+    "images": ["https://placehold.co/600x400?text=Horizontal+Flow+Wrapper"]
+  },
+  {
+    "id": 2,
+    "name": "Vertical Form Fill Seal (VFFS)",
+    "category": "Vertical Packing Machine",
+    "manufacturer": "Sanko / China",
+    "description": "Forms bag from roll film, fills, and seals. Handles granules, powders, nuts, chips, and frozen items.",
+    "models": ["SK-VFFS500"],
+    "images": ["https://placehold.co/600x400?text=VFFS+Machine"]
+  },
+  {
+    "id": 3,
+    "name": "Multihead Weigher",
+    "category": "Weighing & Filling",
+    "manufacturer": "Kawashima / China",
+    "description": "High-speed combination weigher for snacks, frozen food, hardware, and produce. Typically paired with VFFS machines.",
+    "models": [],
+    "images": ["https://placehold.co/600x400?text=Multihead+Weigher"]
+  }
+]
