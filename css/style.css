@@ -275,6 +275,15 @@ a:hover {
 	margin-bottom: 1rem;
 }
 
+.brands-strip-more {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--csh-white);
+	margin-top: 0.75rem;
+	margin-bottom: 0;
+	letter-spacing: 0.08em;
+}
+
 .brand-pill {
 	display: inline-block;
 	padding: 0.25rem 0.8rem;
@@ -462,7 +471,7 @@ a:hover {
 
 .footer-copy {
 	font-size: 0.75rem;
-	color: #555555;
+	color: #7a7a7a;
 	margin-top: 1.5rem;
 	padding-top: 1rem;
 	border-top: 1px solid #333333;
