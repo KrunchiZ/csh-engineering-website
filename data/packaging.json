@@ -1,29 +1,38 @@
 [
   {
     "id": 1,
-    "name": "Horizontal Flow Wrapper",
+    "name": "Horizontal Wrapping Machine",
     "category": "Horizontal Packing Machine",
-    "manufacturer": "TAM / Kawashima / China",
-    "description": "Packs products horizontally — bread, candy, biscuit, wafer, vegetables. Suitable for regular-shaped items on a conveyor.",
-    "models": ["TAM-HW300", "KW-450"],
-    "images": ["https://placehold.co/600x400?text=Horizontal+Flow+Wrapper"]
+    "manufacturer": "China",
+    "description": "Packs products in horizontal form — bread, candy, biscuit, wafer, vegetables and similar regular-shaped items.",
+    "models": [],
+    "images": ["images/products/horizontal-wrapping-machine-1.webp"]
   },
   {
     "id": 2,
-    "name": "Vertical Form Fill Seal (VFFS)",
-    "category": "Vertical Packing Machine",
-    "manufacturer": "Sanko / China",
-    "description": "Forms bag from roll film, fills, and seals. Handles granules, powders, nuts, chips, and frozen items.",
-    "models": ["SK-VFFS500"],
-    "images": ["https://placehold.co/600x400?text=VFFS+Machine"]
+    "name": "Multihead Weigher",
+    "category": "Multihead Weigher",
+    "manufacturer": "China",
+    "description": "High-accuracy, high-speed weigher for candy, biscuit, nuts, screw nails, granules, salty vegetables and similar products.",
+    "models": [],
+    "images": ["images/products/multihead-weigher-1.webp"]
   },
   {
     "id": 3,
-    "name": "Multihead Weigher",
-    "category": "Weighing & Filling",
-    "manufacturer": "Kawashima / China",
-    "description": "High-speed combination weigher for snacks, frozen food, hardware, and produce. Typically paired with VFFS machines.",
+    "name": "Vertical Form Fill Seal Machine",
+    "category": "Vertical Form Fill Seal Machine",
+    "manufacturer": "China",
+    "description": "Complete VFFS system with multihead weigher, Z-conveyor, platform and output conveyor. Suitable for candy, biscuit, nuts, screw nails, granules, salty vegetables and similar products.",
+    "models": ["CSH 320", "CSH 420", "CSH 520"],
+    "images": ["images/products/vffs-machine-1.webp"]
+  },
+  {
+    "id": 4,
+    "name": "Auger Filling Machine",
+    "category": "Semi Automatic Auger Filling Machine",
+    "manufacturer": "China",
+    "description": "Semi-automatic auger filling machine for powder dosing products — spice powder, washing powder, granules, nuts and similar products.",
     "models": [],
-    "images": ["https://placehold.co/600x400?text=Multihead+Weigher"]
+    "images": ["images/products/auger-filling-machine-1.webp"]
   }
 ]
