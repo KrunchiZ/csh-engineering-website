@@ -1,33 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Ingersoll Rand SE/SE Sierra Intellisys Controller",
+    "name": "Ingersoll Rand SE / SE Sierra Intellisys Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
     "partNumbers": ["39817655", "22128763"],
-    "description": "Intellisys controller for IR SE/SE Sierra series. Covers oil-free compressors and motor starters.",
+    "description": "SE Intellisys, SE Sierra Intellisys Controller for Air Compressor, Oil Free Air Compressor and Motor Starter.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
-      "No response from controller"
+      "No response from controller",
+      "No Star Delta output",
+      "Compressor can't load / unload",
+      "Check motor rotation",
+      "Low or high sump pressure",
+      "High pressure alarm"
     ],
     "serviceLeadTime": "At least 7 working days",
-    "images": ["https://placehold.co/600x400?text=IR+SE+Intellisys"]
+    "images": ["images/products/ir-se-intellisys-1.webp"]
   },
   {
     "id": 2,
-    "name": "Ingersoll Rand X Series Intellisys Controller",
+    "name": "Ingersoll Rand SG / SGNe Intellisys Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
-    "partNumbers": ["23474706", "54749135"],
-    "description": "Intellisys controller for IR X Series rotary screw air compressors.",
+    "partNumbers": ["39375158", "54642129"],
+    "description": "SG Intellisys, SGNe Intellisys Controller for Air Compressor, Oil Free Air Compressor and Stepper Motor drives.",
     "commonProblems": [
-      "Display backlight failure",
-      "Communication fault between controller and drive",
-      "Keypad unresponsive"
+      "Unable to press front keypad membrane button",
+      "Darkened LCD or display shows funny characters",
+      "No response from controller",
+      "No Star Delta output",
+      "Compressor can't load / unload",
+      "Check motor rotation",
+      "Check inlet control / inlet control system alarms",
+      "Stepper limit switch alarm",
+      "Starter fault"
     ],
     "serviceLeadTime": "At least 7 working days",
-    "images": ["https://placehold.co/600x400?text=IR+X+Series"]
+    "images": ["images/products/ir-sg-intellisys-1.webp"]
   },
   {
     "id": 3,
@@ -39,9 +50,11 @@
     "commonProblems": [
       "SD card failure causing boot loop",
       "Relay output failure",
-      "Display shows error on startup"
+      "Display shows error on startup",
+      "Communication fault",
+      "Pressure sensor alarm"
     ],
     "serviceLeadTime": "At least 10 working days",
-    "images": ["https://placehold.co/600x400?text=Kaeser+Sigma"]
+    "images": ["images/products/kaeser-sigma-control-1.webp"]
   }
 ]

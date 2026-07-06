@@ -161,7 +161,7 @@ a:hover {
 	letter-spacing: 0.18em;
 	text-transform: uppercase;
 	color: var(--csh-red);
-	margin-bottom: 1rem;	
+	margin-bottom: 1rem;
 }
 
 .hero h1 {
@@ -242,7 +242,7 @@ a:hover {
 .brands-strip {
 	padding: 1.75rem 0;
 	background: var(--csh-white);
-	background-image: url('../images/banner_homepage.webp');
+	background-image: url('../images/banner-homepage.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -533,5 +533,187 @@ a:hover {
 
 	.cta-strip {
 		padding: 2rem 0;
+	}
+}
+
+/* ============================================================
+   PAGE HEADER (controllers, packaging, reconditioned, about)
+   ============================================================ */
+.page-header {
+	background: var(--csh-white);
+	border-bottom: 1px solid var(--csh-grey-200);
+	padding: 3rem 0 2.5rem;
+}
+
+.page-header-eyebrow {
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--csh-red);
+	margin-bottom: 0.5rem;
+}
+
+.page-header-title {
+	font-size: clamp(1.8rem, 4vw, 2.8rem);
+	font-weight: 700;
+	color: var(--csh-dark);
+	margin-bottom: 0.75rem;
+}
+
+.page-header-sub {
+	color: var(--csh-grey-600);
+	font-size: 0.95rem;
+	max-width: 640px;
+	margin-bottom: 1.5rem;
+}
+
+/* ============================================================
+   CONTROLLERS PAGE
+   ============================================================ */
+
+.controller-carousel {
+	border: 1px solid var(--csh-grey-200);
+	border-radius: var(--radius);
+	overflow: hidden;
+	background: var(--csh-grey-100);
+}
+
+.controller-img {
+	height: 320px;
+	object-fit: contain;
+	object-position: center;
+	background: var(--csh-grey-100);
+	padding: 12px;
+}
+
+.controller-carousel .carousel-control-prev,
+.controller-carousel .carousel-control-next {
+	width: 36px;
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: var(--radius);
+	top: 50%;
+	transform: translateY(-50%);
+	height: 36px;
+	opacity: 0.7;
+}
+
+.controller-carousel .carousel-indicators [data-bs-target] {
+	background-color: var(--csh-grey-400);
+}
+
+.controller-carousel .carousel-indicators .active {
+	background-color: var(--csh-red);
+}
+
+.controller-info {
+	padding: 0.5rem 0;
+}
+
+.controller-brand-link {
+	display: inline-flex;
+	align-items: center;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--csh-red);
+	margin-bottom: 0.5rem;
+	transition: color var(--transition);
+}
+
+.controller-brand-link:hover {
+	color: var(--csh-red-dark);
+}
+
+.controller-title {
+	font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+	font-weight: 700;
+	color: var(--csh-dark);
+	margin-bottom: 0.75rem;
+	line-height: 1.2;
+}
+
+.controller-desc {
+	color: var(--csh-grey-600);
+	font-size: 0.88rem;
+	margin-bottom: 1rem;
+}
+
+.controller-parts {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+	margin-bottom: 1.25rem;
+}
+
+.controller-parts-label {
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--csh-grey-400);
+	margin-right: 0.25rem;
+}
+
+.part-badge {
+	display: inline-block;
+	background: var(--csh-grey-100);
+	border: 1px solid var(--csh-grey-200);
+	color: var(--csh-dark);
+	font-size: 0.76rem;
+	font-weight: 600;
+	font-family: 'Courier New', monospace;
+	padding: 0.15rem 0.5rem;
+	border-radius: 2px;
+}
+
+.controller-problems {
+	background: var(--csh-grey-100);
+	border-left: 3px solid var(--csh-red);
+	border-radius: 0 var(--radius) var(--radius) 0;
+	padding: 0.85rem 1rem;
+	margin-bottom: 1.25rem;
+}
+
+.controller-problems-label {
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--csh-red);
+	margin-bottom: 0.5rem;
+}
+
+.controller-problems-list {
+	margin: 0;
+	padding-left: 1.1rem;
+	font-size: 0.83rem;
+	color: var(--csh-grey-600);
+	line-height: 1.7;
+}
+
+.controller-leadtime {
+	font-size: 0.83rem;
+	color: var(--csh-grey-600);
+	margin-bottom: 0.5rem;
+}
+
+.controller-leadtime strong {
+	color: var(--csh-dark);
+}
+
+.controller-row.border-bottom {
+	border-color: var(--csh-grey-200) !important;
+}
+
+@media (max-width: 768px) {
+	.controller-img {
+		height: 240px;
+	}
+
+	.controller-info {
+		padding: 0;
 	}
 }
