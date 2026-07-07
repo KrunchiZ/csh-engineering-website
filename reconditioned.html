@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reconditioned Items — CSH Engineering Services & Trading</title>
+  <meta name="description" content="Ready stock of reconditioned and used air compressor controller parts. Power driver boards, interface boards and controller modules — tested and available.">
+  <meta name="keywords" content="reconditioned air compressor controller, used controller parts, power driver board, interface board, Malaysia">
+  <meta property="og:title" content="Reconditioned Items — CSH Engineering Services & Trading">
+  <meta property="og:description" content="Ready stock of reconditioned and used air compressor controller parts — tested and available for immediate purchase.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="reconditioned">
+
+  <div id="navbar"></div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <p class="page-header-eyebrow">Pre-Owned</p>
+      <h1 class="page-header-title">Reconditioned &amp; Used Items</h1>
+      <p class="page-header-sub">
+        Ready stock of reconditioned and used controller parts — tested and verified functional.
+        All items are from major compressor brands. Enquire for pricing and availability.
+      </p>
+    </div>
+  </div>
+
+  <!-- SEARCH + FILTER BAR -->
+  <div class="recon-toolbar">
+    <div class="container">
+      <div class="row g-2 align-items-center">
+        <div class="col-12 col-md-5">
+          <div class="recon-search-wrap">
+            <i class="bi bi-search recon-search-icon"></i>
+            <input type="text" id="recon-search" class="recon-search"
+                   placeholder="Search by name or brand...">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <select id="recon-category" class="recon-select">
+            <option value="">All Categories</option>
+            <option value="Air Compressor Controller">Air Compressor Controller</option>
+            <option value="Packaging Machine">Packaging Machine</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-3">
+          <select id="recon-sort" class="recon-select">
+            <option value="name-asc">Name A → Z</option>
+            <option value="name-desc">Name Z → A</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECONDITIONED GRID -->
+  <section class="section">
+    <div class="container">
+      <p class="text-muted-c mb-3" id="recon-count" style="font-size:0.82rem;"></p>
+      <div class="row g-3" id="recon-grid">
+        <div class="col-12 text-center py-5 text-muted-c">
+          <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+          Loading...
+        </div>
+      </div>
+      <p class="text-muted-c text-center py-4 d-none" id="recon-empty">
+        No items match your search.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal fade" id="recon-modal" tabindex="-1" aria-label="Product Detail">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recon-modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div id="recon-modal-carousel" class="carousel slide controller-carousel" data-bs-ride="false">
+                <div class="carousel-inner" id="recon-modal-images"></div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#recon-modal-carousel" data-bs-slide="prev"
+                        id="recon-modal-prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#recon-modal-carousel" data-bs-slide="next"
+                        id="recon-modal-next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="controller-brand-link mb-1" id="recon-modal-category"></p>
+              <p class="controller-brand-link mb-3" id="recon-modal-brand"></p>
+              <p class="controller-desc" id="recon-modal-desc"></p>
+              <div class="controller-leadtime mb-3" id="recon-modal-condition"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+             id="recon-modal-wa" class="btn-csh">
+            <i class="bi bi-whatsapp me-1"></i> Enquire Now
+          </a>
+          <button type="button" class="btn-csh-outline" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script>
+    let allItems = [];
+
+    // Render product grid
+    function renderGrid(items) {
+      const grid    = document.getElementById('recon-grid');
+      const empty   = document.getElementById('recon-empty');
+      const counter = document.getElementById('recon-count');
+
+      counter.textContent = `Showing ${items.length} item${items.length !== 1 ? 's' : ''}`;
+
+      if (!items.length) {
+        grid.innerHTML = '';
+        empty.classList.remove('d-none');
+        return;
+      }
+
+      empty.classList.add('d-none');
+      grid.innerHTML = items.map(item => {
+        const img = item.images?.[0] || 'https://placehold.co/600x400?text=Placeholder';
+        return `
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card recon-card" role="button"
+                 onclick="openModal(${item.id})" style="cursor:pointer;">
+              <img src="${img}" alt="${item.name}" loading="lazy"
+                   onerror="this.src='https://placehold.co/600x400?text=Placeholder'">
+              <div class="product-card-body">
+                <p class="product-card-brand">${item.brand}</p>
+                <p class="product-card-title">${item.name}</p>
+                <p class="product-card-desc">${item.category}</p>
+                <span class="recon-condition-badge">${item.condition}</span>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    // Filter + sort
+    function applyFilters() {
+      const search   = document.getElementById('recon-search').value.toLowerCase();
+      const category = document.getElementById('recon-category').value;
+      const sort     = document.getElementById('recon-sort').value;
+
+      let filtered = allItems.filter(item => {
+        const matchSearch   = !search ||
+          item.name.toLowerCase().includes(search) ||
+          item.brand.toLowerCase().includes(search);
+        const matchCategory = !category || item.category === category;
+        return matchSearch && matchCategory;
+      });
+
+      filtered.sort((a, b) => {
+        if (sort === 'name-asc')  return a.name.localeCompare(b.name);
+        if (sort === 'name-desc') return b.name.localeCompare(a.name);
+        return 0;
+      });
+
+      renderGrid(filtered);
+    }
+
+    // Open product modal
+    function openModal(id) {
+      const item = allItems.find(i => i.id === id);
+      if (!item) return;
+
+      const images = item.images?.length ? item.images : ['https://placehold.co/600x400?text=Placeholder'];
+
+      document.getElementById('recon-modal-title').textContent    = item.name;
+      document.getElementById('recon-modal-category').textContent = item.category;
+      document.getElementById('recon-modal-brand').textContent    = item.brand;
+      document.getElementById('recon-modal-desc').textContent     = item.description;
+      document.getElementById('recon-modal-condition').innerHTML  =
+        `<i class="bi bi-patch-check me-2"></i>Condition: <strong>${item.condition}</strong>`;
+
+      // Carousel images
+      document.getElementById('recon-modal-images').innerHTML = images.map((img, i) => `
+        <div class="carousel-item ${i === 0 ? 'active' : ''}">
+          <img src="${img}" alt="${item.name}" class="d-block w-100 controller-img"
+               onerror="this.src='https://placehold.co/600x400?text=Placeholder'">
+        </div>`).join('');
+
+      // Show/hide carousel controls
+      const showControls = images.length > 1;
+      document.getElementById('recon-modal-prev').style.display = showControls ? '' : 'none';
+      document.getElementById('recon-modal-next').style.display = showControls ? '' : 'none';
+
+      // WhatsApp link
+      document.getElementById('recon-modal-wa').href =
+        `https://wa.me/60122911125?text=Hi, I would like to enquire about ${encodeURIComponent(item.name)}`;
+
+      new bootstrap.Modal(document.getElementById('recon-modal')).show();
+    }
+
+    // Event listeners
+    document.getElementById('recon-search').addEventListener('input', applyFilters);
+    document.getElementById('recon-category').addEventListener('change', applyFilters);
+    document.getElementById('recon-sort').addEventListener('change', applyFilters);
+
+    // Load data
+    fetch('data/reconditioned.json')
+      .then(r => r.json())
+      .then(data => {
+        allItems = data;
+        applyFilters();
+      })
+      .catch(() => {
+        document.getElementById('recon-grid').innerHTML =
+          '<p class="text-muted-c">Failed to load items. Please try again later.</p>';
+      });
+  </script>
+
+</body>
+</html>

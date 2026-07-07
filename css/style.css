@@ -845,3 +845,103 @@ a:hover {
 		align-items: flex-start;
 	}
 }
+
+/* ============================================================
+   RECONDITIONED PAGE
+   ============================================================ */
+
+/* Toolbar */
+.recon-toolbar {
+	background: var(--csh-white);
+	border-bottom: 1px solid var(--csh-grey-200);
+	padding: 1rem 0;
+	position: sticky;
+	top: 62px;
+	/* below navbar */
+	z-index: 100;
+}
+
+.recon-search-wrap {
+	position: relative;
+}
+
+.recon-search-icon {
+	position: absolute;
+	left: 0.75rem;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--csh-grey-400);
+	font-size: 0.85rem;
+}
+
+.recon-search {
+	width: 100%;
+	padding: 0.5rem 0.75rem 0.5rem 2.2rem;
+	border: 1px solid var(--csh-grey-200);
+	border-radius: var(--radius);
+	font-size: 0.85rem;
+	font-family: 'Inter', sans-serif;
+	color: var(--csh-dark);
+	background: var(--csh-grey-100);
+	transition: border-color var(--transition);
+}
+
+.recon-search:focus {
+	outline: none;
+	border-color: var(--csh-red);
+	background: var(--csh-white);
+}
+
+.recon-select {
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid var(--csh-grey-200);
+	border-radius: var(--radius);
+	font-size: 0.85rem;
+	font-family: 'Inter', sans-serif;
+	color: var(--csh-dark);
+	background: var(--csh-grey-100);
+	transition: border-color var(--transition);
+	cursor: pointer;
+}
+
+.recon-select:focus {
+	outline: none;
+	border-color: var(--csh-red);
+}
+
+/* Condition badge on card */
+.recon-condition-badge {
+	display: inline-block;
+	font-size: 0.68rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	background: var(--csh-grey-100);
+	border: 1px solid var(--csh-grey-200);
+	color: var(--csh-grey-600);
+	padding: 0.15rem 0.5rem;
+	border-radius: 2px;
+	margin-top: 0.4rem;
+}
+
+/* Card hover — pointer already set inline */
+.recon-card:hover {
+	border-color: var(--csh-red);
+	box-shadow: 0 4px 12px rgba(204, 34, 34, 0.08);
+	transform: translateY(-2px);
+}
+
+/* Modal footer buttons gap */
+.modal-footer .btn-csh,
+.modal-footer .btn-csh-outline {
+	margin: 0 0.25rem;
+}
+
+@media (max-width: 768px) {
+	.recon-toolbar {
+		top: 56px;
+		position: relative;
+		/* don't sticky on mobile, too much space used */
+	}
+}
