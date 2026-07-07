@@ -123,17 +123,17 @@
 	<hr class="divider">
 
 	<!-- ======================================================
-			 ENCLOSURES HIGHLIGHT
+			 METAL WORKS HIGHLIGHT
 	====================================================== -->
 	<section class="section">
 		<div class="container">
 			<p class="section-label">Metal Fabrication</p>
-			<h2 class="section-title">Laser Cut Enclosures &amp; Cabinets</h2>
+			<h2 class="section-title">Laser Cut Metal Works</h2>
 			<p class="section-sub">Custom-fabricated FACP enclosures, intercom boxes and metal laser cut work for fire safety, industrial and commercial applications.</p>
-			<div class="row g-3" id="enclosures-highlight"></div>
+			<div class="row g-3" id="metalworks-highlight"></div>
 			<div class="mt-4">
-				<a href="enclosures.html" class="btn-csh-outline">
-					View All Enclosures <i class="bi bi-arrow-right ms-1"></i>
+				<a href="metalworks.html" class="btn-csh-outline">
+					View All Laser Cut Products <i class="bi bi-arrow-right ms-1"></i>
 				</a>
 			</div>
 		</div>
@@ -146,9 +146,9 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-8">
-					<p class="section-label">Ready Stock</p>
+					<p class="section-label">PRE-OWNED</p>
 					<h2 class="section-title">Reconditioned &amp; Used Units</h2>
-					<p class="section-sub">Power driver boards, interface boards and controller parts — tested and available for immediate purchase.</p>
+					<p class="section-sub">Power driver boards, interface boards and controller parts — tested and available for purchase.</p>
 				</div>
 				<div class="col-lg-4 mt-3 mt-lg-0 text-lg-end">
 					<a href="reconditioned.html" class="btn-csh-white">
@@ -191,11 +191,11 @@
 		Promise.all([
 			fetch('data/controllers.json').then(r => r.json()),
 			fetch('data/packaging.json').then(r => r.json()),
-			fetch('data/enclosures.json').then(r => r.json())
-		]).then(([controllers, packaging, enclosures]) => {
+			fetch('data/metalworks.json').then(r => r.json())
+		]).then(([controllers, packaging, metalworks]) => {
 			renderHighlights(controllers, 'controllers-highlight', 3);
 			renderHighlights(packaging,   'packaging-highlight',   3);
-			renderHighlights(enclosures,  'enclosures-highlight',  3);
+			renderHighlights(metalworks,  'metalworks-highlight',  3);
 		}).catch(err => console.error('Failed to load product data:', err));
 	</script>
 

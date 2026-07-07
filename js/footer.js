@@ -18,7 +18,7 @@
                 CSH Engineering Services &amp; Trading
               </span>
             </a>
-            <p>Specialist in electronic controller repair for air compressors.<br>
+            <p>Specialist in air compressor controllers &amp; metal fabrication.<br>
                25 years serving Malaysian industry.</p>
 
             <!-- Controllers / Packaging contact -->
@@ -38,9 +38,9 @@
               </div>
             </div>
 
-            <!-- Enclosures contact -->
+            <!-- Metal Works contact -->
             <div class="footer-contact-group mt-2">
-              <p class="footer-contact-group-label">Enclosures</p>
+              <p class="footer-contact-group-label">Metal Works</p>
               <div class="d-flex contact-badges">
                 <a href="https://wa.me/60122311781" target="_blank" rel="noopener noreferrer"
                    class="contact-badge wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
@@ -57,7 +57,7 @@
             <p class="footer-nav-heading">Navigation</p>
             <a href="controllers.html" class="footer-link">Air Compressor Controllers</a>
             <a href="packaging.html" class="footer-link">Packaging Machinery</a>
-            <a href="enclosures.html" class="footer-link">Laser Cut Enclosures</a>
+            <a href="metalworks.html" class="footer-link">Metal Works</a>
             <a href="reconditioned.html" class="footer-link">Reconditioned Items</a>
             <a href="about.html" class="footer-link">About Us</a>
           </div>
@@ -74,7 +74,7 @@
               <i class="bi bi-envelope-fill me-2 text-red"></i>s_cheng_88@hotmail.com
             </p>
 
-            <p class="footer-contact-group-label mb-1">Enclosures</p>
+            <p class="footer-contact-group-label mb-1">Metal Works</p>
             <p class="footer-link">
               <i class="bi bi-telephone-fill me-2 text-red"></i>+60 12-231 1781
             </p>
