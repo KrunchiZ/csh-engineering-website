@@ -149,10 +149,29 @@ a:hover {
 /* --- Hero --- */
 .hero {
 	background-color: var(--csh-white);
+	background-image: url('../images/banner-hero.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	border-bottom: 1px solid var(--csh-grey-200);
 	padding: 5rem 0 4rem;
 	position: relative;
+	z-index: 1;
 	overflow: hidden;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(255, 255, 255, 0.6);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.hero .container {
+	position: relative;
+	z-index: 1;
 }
 
 .hero-eyebrow {
@@ -179,7 +198,7 @@ a:hover {
 .hero-sub {
 	color: var(--csh-grey-600);
 	font-size: 1rem;
-	max-width: 640px;
+	max-width: 720px;
 	margin-bottom: 2rem;
 }
 
@@ -242,7 +261,7 @@ a:hover {
 .brands-strip {
 	padding: 1.75rem 0;
 	background: var(--csh-white);
-	background-image: url('../images/banner-homepage.webp');
+	background-image: url('../images/banner-brand.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -759,4 +778,70 @@ a:hover {
 	color: var(--csh-grey-600);
 	margin: 0;
 	line-height: 1.5;
+}
+
+/* ============================================================
+   DUAL CONTACT BADGES (navbar + footer)
+   ============================================================ */
+
+/* Navbar wrap */
+.navbar-contact-wrap {
+	gap: 0.5rem;
+}
+
+.navbar-badge-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3px;
+}
+
+.navbar-badge-label {
+	font-size: 0.6rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--csh-grey-400);
+	white-space: nowrap;
+}
+
+.navbar-badge-divider {
+	width: 1px;
+	height: 28px;
+	background: var(--csh-grey-200);
+	margin: 0 0.25rem;
+	align-self: center;
+}
+
+/* Footer contact group labels */
+.footer-contact-group-label {
+	font-size: 0.65rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--csh-grey-400);
+	margin-bottom: 0.4rem;
+}
+
+/* Responsive — stack badge groups on mobile */
+@media (max-width: 991px) {
+	.navbar-contact-wrap {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-top: 0.75rem;
+		padding-top: 0.75rem;
+		border-top: 1px solid var(--csh-grey-200);
+		width: 100%;
+	}
+
+	.navbar-badge-divider {
+		width: 100%;
+		height: 1px;
+		margin: 0.25rem 0;
+	}
+
+	.navbar-badge-group {
+		align-items: flex-start;
+	}
 }
