@@ -945,3 +945,186 @@ a:hover {
 		/* don't sticky on mobile, too much space used */
 	}
 }
+
+/* ============================================================
+ABOUT PAGE
+============================================================ */
+
+/* Building photo */
+.about-img-wrap {
+	border: 1px solid var(--csh-grey-200);
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+
+.about-img {
+	width: 100%;
+	height: 320px;
+	border: 1px solid var(--csh-grey-200);
+	object-fit: cover;
+	object-position: center;
+	display: block;
+}
+
+/* Key facts row */
+.about-facts {
+	display: flex;
+	gap: 2rem;
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--csh-grey-200);
+	flex-wrap: wrap;
+}
+
+.about-fact-num {
+	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--csh-red);
+	line-height: 1;
+}
+
+.about-fact-label {
+	font-size: 0.72rem;
+	color: var(--csh-grey-600);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin-top: 0.2rem;
+}
+
+/* Services cards */
+.about-service-card {
+	background: var(--csh-white);
+	border: 1px solid var(--csh-grey-200);
+	border-radius: var(--radius);
+	padding: 1.5rem;
+	height: 100%;
+	transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.about-service-card:hover {
+	border-color: var(--csh-red);
+	box-shadow: 0 4px 12px rgba(204, 34, 34, 0.06);
+}
+
+.about-service-num {
+	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: var(--csh-grey-200);
+	line-height: 1;
+	margin-bottom: 0.75rem;
+}
+
+.about-service-title {
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: var(--csh-dark);
+	margin-bottom: 0.6rem;
+}
+
+.about-service-desc {
+	font-size: 0.83rem;
+	color: var(--csh-grey-600);
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+.about-service-link {
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--csh-red);
+	transition: color var(--transition);
+}
+
+.about-service-link:hover {
+	color: var(--csh-red-dark);
+}
+
+/* Contact cards */
+.about-contact-card {
+	background: var(--csh-white);
+	border: 1px solid var(--csh-grey-400);
+	border-radius: var(--radius);
+	padding: 1.5rem;
+	height: 100%;
+}
+
+.about-contact-heading {
+	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: var(--csh-dark);
+	margin-bottom: 1rem;
+	padding-bottom: 0.75rem;
+	border-bottom: 1px solid var(--csh-grey-200);
+	letter-spacing: 0.02em;
+}
+
+.about-contact-row {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin-bottom: 0.6rem;
+	font-size: 0.88rem;
+}
+
+.about-contact-icon {
+	font-size: 0.95rem;
+	flex-shrink: 0;
+	width: 16px;
+	text-align: center;
+}
+
+.about-contact-row a {
+	color: var(--csh-dark);
+	transition: color var(--transition);
+}
+
+.about-contact-row a:hover {
+	color: var(--csh-red);
+}
+
+/* Map */
+.about-map-wrap {
+	margin-top: 0.5rem;
+}
+
+.about-map {
+	width: 100%;
+	height: 320px;
+	border: 1px solid var(--csh-grey-200);
+	border-radius: var(--radius);
+	display: block;
+}
+
+.about-map-note {
+	font-size: 0.9rem;
+	color: var(--csh-grey-400);
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+}
+
+.about-map-note code {
+	background: var(--csh-grey-100);
+	padding: 0.1rem 0.3rem;
+	border-radius: 2px;
+	font-size: 0.75rem;
+	color: var(--csh-dark);
+}
+
+@media (max-width: 768px) {
+	.about-img {
+		height: 220px;
+	}
+
+	.about-map {
+		height: 240px;
+	}
+
+	.about-facts {
+		gap: 1.25rem;
+	}
+}
