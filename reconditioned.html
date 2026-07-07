@@ -74,6 +74,9 @@
       <p class="text-muted-c text-center py-4 d-none" id="recon-empty">
         No items match your search.
       </p>
+
+      <!-- PAGINATION -->
+      <div class="recon-pagination" id="recon-pagination"></div>
     </div>
   </section>
 
@@ -127,24 +130,35 @@
   <script src="js/navbar.js"></script>
   <script src="js/footer.js"></script>
   <script>
-    let allItems = [];
+    const ITEMS_PER_PAGE = 12;
+    let allItems    = [];
+    let filtered    = [];
+    let currentPage = 1;
 
-    // Render product grid
-    function renderGrid(items) {
+    // Render one page of items
+    function renderGrid() {
       const grid    = document.getElementById('recon-grid');
       const empty   = document.getElementById('recon-empty');
       const counter = document.getElementById('recon-count');
 
-      counter.textContent = `Showing ${items.length} item${items.length !== 1 ? 's' : ''}`;
-
-      if (!items.length) {
+      if (!filtered.length) {
         grid.innerHTML = '';
         empty.classList.remove('d-none');
+        counter.textContent = 'No items found.';
+        renderPagination();
         return;
       }
 
       empty.classList.add('d-none');
-      grid.innerHTML = items.map(item => {
+
+      const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+      const start      = (currentPage - 1) * ITEMS_PER_PAGE;
+      const pageItems  = filtered.slice(start, start + ITEMS_PER_PAGE);
+
+      counter.textContent =
+        `Showing ${start + 1}–${Math.min(start + ITEMS_PER_PAGE, filtered.length)} of ${filtered.length} item${filtered.length !== 1 ? 's' : ''}`;
+
+      grid.innerHTML = pageItems.map(item => {
         const img = item.images?.[0] || 'https://placehold.co/600x400?text=Placeholder';
         return `
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -161,15 +175,62 @@
             </div>
           </div>`;
       }).join('');
+
+      renderPagination();
     }
 
-    // Filter + sort
+    // Render pagination buttons
+    function renderPagination() {
+      const container  = document.getElementById('recon-pagination');
+      const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+
+      let buttons = '';
+
+      // Previous
+      buttons += `
+        <button class="recon-page-btn" onclick="goToPage(${currentPage - 1})"
+          ${currentPage === 1 ? 'disabled' : ''}>
+          <i class="bi bi-chevron-left"></i>
+        </button>`;
+
+      // Page numbers — show up to 5 around current page
+      const range = 2;
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - range && i <= currentPage + range)) {
+          buttons += `
+            <button class="recon-page-btn ${i === currentPage ? 'active' : ''}"
+                    onclick="goToPage(${i})">${i}</button>`;
+        } else if (i === currentPage - range - 1 || i === currentPage + range + 1) {
+          buttons += `<span class="recon-page-ellipsis">…</span>`;
+        }
+      }
+
+      // Next
+      buttons += `
+        <button class="recon-page-btn" onclick="goToPage(${currentPage + 1})"
+          ${currentPage === totalPages ? 'disabled' : ''}>
+          <i class="bi bi-chevron-right"></i>
+        </button>`;
+
+      container.innerHTML = buttons;
+    }
+
+    // Go to page and scroll to top of grid
+    function goToPage(page) {
+      const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+      if (page < 1 || page > totalPages) return;
+      currentPage = page;
+      renderGrid();
+      document.querySelector('.recon-toolbar').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Filter + sort — resets to page 1
     function applyFilters() {
       const search   = document.getElementById('recon-search').value.toLowerCase();
       const category = document.getElementById('recon-category').value;
       const sort     = document.getElementById('recon-sort').value;
 
-      let filtered = allItems.filter(item => {
+      filtered = allItems.filter(item => {
         const matchSearch   = !search ||
           item.name.toLowerCase().includes(search) ||
           item.brand.toLowerCase().includes(search);
@@ -183,7 +244,8 @@
         return 0;
       });
 
-      renderGrid(filtered);
+      currentPage = 1;
+      renderGrid();
     }
 
     // Open product modal
@@ -200,19 +262,16 @@
       document.getElementById('recon-modal-condition').innerHTML  =
         `<i class="bi bi-patch-check me-2"></i>Condition: <strong>${item.condition}</strong>`;
 
-      // Carousel images
       document.getElementById('recon-modal-images').innerHTML = images.map((img, i) => `
         <div class="carousel-item ${i === 0 ? 'active' : ''}">
           <img src="${img}" alt="${item.name}" class="d-block w-100 controller-img"
                onerror="this.src='https://placehold.co/600x400?text=Placeholder'">
         </div>`).join('');
 
-      // Show/hide carousel controls
       const showControls = images.length > 1;
       document.getElementById('recon-modal-prev').style.display = showControls ? '' : 'none';
       document.getElementById('recon-modal-next').style.display = showControls ? '' : 'none';
 
-      // WhatsApp link
       document.getElementById('recon-modal-wa').href =
         `https://wa.me/60122911125?text=Hi, I would like to enquire about ${encodeURIComponent(item.name)}`;
 
