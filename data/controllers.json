@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Ingersoll Rand SE / SE Sierra / SG / SG Nirvana Intellisys Controller",
     "brand": "Ingersoll Rand",
-    "brandUrl": "https://www.ingersollrand.com/en/products/air-compressors/oil-free-air-compressors",
+    "brandUrl": "https://ifixcompressors.com/controllers/4/index.html",
     "models": ["39817655", "22128763", "39375158", "54642129"],
     "description": "SE / SE Sierra Intellisys and SG / SG Nirvana (SGN) Intellisys Air Compressor Controller.",
     "commonProblems": [
@@ -40,7 +40,7 @@
     "id": 2,
     "name": "Ingersoll Rand Xe Series CENTAC Controller",
     "brand": "Ingersoll Rand",
-    "brandUrl": "https://www.ingersollrand.com/en-lac/products/air-compressors/controls-and-automation/compressor-system-controller-xe-145m-series-rotary",
+    "brandUrl": "https://ifixcompressors.com/controllers/4/index.html",
     "models": ["Xe-70M", "Xe-90M", "Xe-145M", "Xe-145-DCU", "Xe-145F"],
     "description": "Xe Series CENTAC Air Compressor Controller.",
     "commonProblems": [
@@ -88,7 +88,7 @@
     "id": 4,
     "name": "Ingersoll Rand S3 Intellisys Controller",
     "brand": "Ingersoll Rand",
-    "brandUrl": "https://www.ingersollrand.com/en-lac/products/air-compressors/oil-flooded-rotary-air-compressors",
+    "brandUrl": "https://ifixcompressors.com/controllers/4/index.html",
     "models": ["S3"],
     "description": "S3 Intellisys Air Compressor Controller.",
     "commonProblems": [
