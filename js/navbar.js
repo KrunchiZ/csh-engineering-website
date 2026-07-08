@@ -77,19 +77,15 @@
                     class="contact-badge wechat" title="WeChat">
                     <i class="bi bi-wechat"></i>
                   </a>
-                  <a href="#line-modal" data-bs-toggle="modal"
-                    class="contact-badge line" title="LINE">
-                    <i class="bi bi-line"></i>
-                  </a>
                 </div>
               </div>
 
               <!-- Divider -->
               <div class="navbar-badge-divider"></div>
 
-              <!-- Group 2: Metal Works -->
+              <!-- Group 2: Laser Cut Metal Works -->
               <div class="navbar-badge-group">
-                <span class="navbar-badge-label">Metal Works</span>
+                <span class="navbar-badge-label">Laser Cut Metal Works</span>
                 <div class="d-flex contact-badges">
                   <a href="https://wa.me/60122311781" target="_blank" rel="noopener noreferrer"
                     class="contact-badge wa" title="WhatsApp: +60 12-231 1781">
@@ -114,3 +110,9 @@
   const target = document.getElementById("navbar");
   if (target) target.outerHTML = html;
 })();
+
+
+// <a href="#line-modal" data-bs-toggle="modal"
+//   class="contact-badge line" title="LINE">
+//   <i class="bi bi-line"></i>
+// </a>

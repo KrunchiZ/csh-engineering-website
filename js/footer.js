@@ -33,14 +33,12 @@
                    class="contact-badge tel" title="Call"><i class="bi bi-telephone-fill"></i></a>
                 <a href="#wechat-modal" data-bs-toggle="modal"
                    class="contact-badge wechat" title="WeChat"><i class="bi bi-wechat"></i></a>
-                <a href="#line-modal" data-bs-toggle="modal"
-                   class="contact-badge line" title="LINE"><i class="bi bi-line"></i></a>
               </div>
             </div>
 
-            <!-- Metal Works contact -->
+            <!-- Laser Cut Metal Works contact -->
             <div class="footer-contact-group mt-2">
-              <p class="footer-contact-group-label">Metal Works</p>
+              <p class="footer-contact-group-label">Laser Cut Metal Works</p>
               <div class="d-flex contact-badges">
                 <a href="https://wa.me/60122311781" target="_blank" rel="noopener noreferrer"
                    class="contact-badge wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
@@ -110,34 +108,12 @@
           </div>
           <div class="modal-body text-center py-4">
             <p class="text-muted-c mb-3" style="font-size:0.82rem;">Scan to add on WeChat</p>
+            <span class="text-muted-c" style="font-size:0.75rem;">scheng_88</span>
             <div style="background:var(--csh-grey-100); border:1px solid var(--csh-grey-200);
                         width:180px; height:180px; margin:0 auto; border-radius:var(--radius);
                         display:flex; align-items:center; justify-content:center;">
               <!-- Replace with: <img src="images/wechat-qr.webp" alt="WeChat QR" width="180"> -->
-              <span class="text-muted-c" style="font-size:0.75rem;">QR Code</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- LINE Modal -->
-    <div class="modal fade" id="line-modal" tabindex="-1" aria-label="LINE QR">
-      <div class="modal-dialog modal-dialog-centered modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h6 class="modal-title">
-              <i class="bi bi-line me-2" style="color:#00B900"></i>LINE
-            </h6>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center py-4">
-            <p class="text-muted-c mb-3" style="font-size:0.82rem;">Scan to add on LINE</p>
-            <div style="background:var(--csh-grey-100); border:1px solid var(--csh-grey-200);
-                        width:180px; height:180px; margin:0 auto; border-radius:var(--radius);
-                        display:flex; align-items:center; justify-content:center;">
-              <!-- Replace with: <img src="images/line-qr.webp" alt="LINE QR" width="180"> -->
-              <span class="text-muted-c" style="font-size:0.75rem;">QR Code</span>
+              <img src="images/wechat-qr.webp" alt="WeChat QR" width="180">
             </div>
           </div>
         </div>
@@ -153,3 +129,32 @@
     });
   }
 })();
+
+
+// <a href="#line-modal" data-bs-toggle="modal"
+//    class="contact-badge line" title="LINE"><i class="bi bi-line"></i></a>
+
+
+
+// <!-- LINE Modal -->
+// <div class="modal fade" id="line-modal" tabindex="-1" aria-label="LINE QR">
+//   <div class="modal-dialog modal-dialog-centered modal-sm">
+//     <div class="modal-content">
+//       <div class="modal-header">
+//         <h6 class="modal-title">
+//           <i class="bi bi-line me-2" style="color:#00B900"></i>LINE
+//         </h6>
+//         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+//       </div>
+//       <div class="modal-body text-center py-4">
+//         <p class="text-muted-c mb-3" style="font-size:0.82rem;">Scan to add on LINE</p>
+//         <div style="background:var(--csh-grey-100); border:1px solid var(--csh-grey-200);
+//                     width:180px; height:180px; margin:0 auto; border-radius:var(--radius);
+//                     display:flex; align-items:center; justify-content:center;">
+//           <!-- Replace with: <img src="images/line-qr.webp" alt="LINE QR" width="180"> -->
+//           <span class="text-muted-c" style="font-size:0.75rem;">QR Code</span>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
