@@ -4,7 +4,7 @@
     "name": "Ingersoll Rand SE / SE Sierra / SG / SG Nirvana Intellisys Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
-    "model": ["39817655", "22128763", "39375158", "54642129"],
+    "models": ["39817655", "22128763", "39375158", "54642129"],
     "description": "SE / SE Sierra Intellisys and SG / SG Nirvana (SGNe) Controller for Air Compressor.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
@@ -27,7 +27,7 @@
     "name": "Ingersoll Rand XE Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
-    "model": ["Xe-70M", ""Xe-90M", "Xe-145M", "Xe-145-DCU"],
+    "models": ["Xe-70M", ""Xe-90M", "Xe-145M", "Xe-145-DCU"],
     "description": "XE Controller for Air Compressor.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
@@ -47,7 +47,7 @@
     "name": "Ingersoll Rand Centac Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
-    "model": [],
+    "models": [],
     "description": "Controller for Centac Turbo Air Compressor.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
@@ -66,7 +66,7 @@
     "name": "Ingersoll Rand S3 Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
-    "model": [],
+    "models": [],
     "description": "S3 Sierra Intellisys Controller for Air Compressor.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
