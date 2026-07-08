@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "IR SE Intellisys Display Board",
+    "name": "IR SG/SGNe Intellisys Display Board",
     "category": "Air Compressor Controller",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
-    "description": "Reconditioned display board for Ingersoll Rand SE/SE Sierra Intellisys. Tested and verified functional.",
+    "description": "Reconditioned display board for Ingersoll Rand SG/SG Nirvana Intellisys.",
     "images": [
       "https://placehold.co/600x400?text=IR+Display+Board+1",
       "https://placehold.co/600x400?text=IR+Display+Board+2"
@@ -13,20 +13,44 @@
   },
   {
     "id": 2,
-    "name": "Kaeser Sigma Control Main Board",
+    "name": "IR Centac MP3 Board",
     "category": "Air Compressor Controller",
-    "brand": "Kaeser",
+    "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
-    "description": "Reconditioned main controller board for Kaeser Sigma Control units. Tested under load.",
+    "description": "Reconditioned main controller board for Ingersoll Rand Centac Turbo Air Compressor.",
     "images": ["https://placehold.co/600x400?text=Kaeser+Main+Board"]
   },
   {
     "id": 3,
-    "name": "Horizontal Wrapper Control Panel",
-    "category": "Packaging Machine",
-    "brand": "TAM",
+    "name": "IR SE Sierra Intellisys Controller",
+    "category": "Air Compressor Controller",
+    "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
-    "description": "Reconditioned electrical control panel for TAM horizontal flow wrapper. Includes PLC and HMI.",
+    "description": "Reconditioned display board for Ingersoll Rand SG/SG Nirvana Intellisys.",
+    "images": [
+      "https://placehold.co/600x400?text=Wrapper+Panel+1",
+      "https://placehold.co/600x400?text=Wrapper+Panel+2"
+    ]
+  }
+  {
+    "id": 4,
+    "name": "IR Red-eyed Intellisys Controller",
+    "category": "Air Compressor Controller",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned display board for Ingersoll Rand Red-eyed Intellisys.",
+    "images": [
+      "https://placehold.co/600x400?text=Wrapper+Panel+1",
+      "https://placehold.co/600x400?text=Wrapper+Panel+2"
+    ]
+  }
+{
+    "id": 5,
+    "name": "IR SG Intellisys Controller Power Supply Unit",
+    "category": "Air Compressor Controller",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned power supply for Ingersoll Rand SG Intellisys.",
     "images": [
       "https://placehold.co/600x400?text=Wrapper+Panel+1",
       "https://placehold.co/600x400?text=Wrapper+Panel+2"
