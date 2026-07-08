@@ -3,9 +3,9 @@
     "id": 1,
     "name": "Ingersoll Rand SE / SE Sierra / SG / SG Nirvana Intellisys Controller",
     "brand": "Ingersoll Rand",
-    "brandUrl": "https://www.ingersollrand.com",
+    "brandUrl": "https://www.ingersollrand.com/en/products/air-compressors/oil-free-air-compressors",
     "models": ["39817655", "22128763", "39375158", "54642129"],
-    "description": "SE / SE Sierra Intellisys and SG / SG Nirvana (SGNe) Controller for Air Compressor.",
+    "description": "SE / SE Sierra Intellisys and SG / SG Nirvana (SGNe) Intellisys Air Compressor Controller.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
@@ -24,11 +24,11 @@
   },
   {
     "id": 2,
-    "name": "Ingersoll Rand XE Controller",
+    "name": "Ingersoll Rand Xe Series CENTAC Controller",
     "brand": "Ingersoll Rand",
-    "brandUrl": "https://www.ingersollrand.com",
-    "models": ["Xe-70M", "Xe-90M", "Xe-145M", "Xe-145-DCU"],
-    "description": "XE Controller for Air Compressor.",
+    "brandUrl": "https://www.ingersollrand.com/en-lac/products/air-compressors/controls-and-automation/compressor-system-controller-xe-145m-series-rotary",
+    "models": ["Xe-70M", "Xe-90M", "Xe-145M", "Xe-145-DCU", "Xe-145F"],
+    "description": "Xe Series Air Compressor Controller.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
@@ -44,11 +44,11 @@
   },
   {
     "id": 3,
-    "name": "Ingersoll Rand Centac Controller",
+    "name": "Ingersoll Rand Legacy CENTAC Controller",
     "brand": "Ingersoll Rand",
-    "brandUrl": "https://www.ingersollrand.com",
-    "models": [],
-    "description": "Controller for Centac Turbo Air Compressor.",
+    "brandUrl": "https://www.ingersollrand.com/en/products/air-compressors/centrifugal-compressors",
+    "models": ["MP3", "CMC"],
+    "description": "Centac Air Compressor Controller.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
@@ -63,11 +63,11 @@
   },
   {
     "id": 4,
-    "name": "Ingersoll Rand S3 Controller",
+    "name": "Ingersoll Rand S3 Intellisys Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
     "models": [],
-    "description": "S3 Sierra Intellisys Controller for Air Compressor.",
+    "description": "S3 Intellisys Air Compressor Controller.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
