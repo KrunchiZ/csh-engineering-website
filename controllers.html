@@ -88,10 +88,10 @@
                 ${i === 0 ? 'class="active"' : ''} aria-label="Image ${i+1}"></button>`).join('')}
           </div>` : '';
 
-        const partNumbers = item.partNumbers?.length
+        const models = item.models?.length
           ? `<div class="controller-parts">
-               <span class="controller-parts-label">Part Numbers</span>
-               ${item.partNumbers.map(p => `<span class="part-badge">${p}</span>`).join('')}
+               <span class="controller-parts-label">Model / Part Numbers</span>
+               ${item.models.map(p => `<span class="part-badge">${p}</span>`).join('')}
              </div>` : '';
 
         const brandEl = item.brandUrl
@@ -123,7 +123,7 @@
               ${brandEl}
               <h2 class="controller-title">${item.name}</h2>
               <p class="controller-desc">${item.description}</p>
-              ${partNumbers}
+              ${models}
               ${problems}
               ${item.serviceLeadTime ? `
                 <div class="controller-leadtime">
