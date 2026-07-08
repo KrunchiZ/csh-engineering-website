@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Ingersoll Rand SE / SE Sierra Intellisys Controller",
+    "name": "Ingersoll Rand SE / SE Sierra / SG / SG Nirvana Intellisys Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
-    "partNumbers": ["39817655", "22128763"],
-    "description": "SE Intellisys, SE Sierra Intellisys Controller for Air Compressor, Oil Free Air Compressor and Motor Starter.",
+    "model": ["39817655", "22128763", "39375158", "54642129"],
+    "description": "SE / SE Sierra Intellisys and SG / SG Nirvana (SGNe) Controller for Air Compressor.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
@@ -16,16 +16,19 @@
       "Low or high sump pressure",
       "High pressure alarm"
     ],
-    "serviceLeadTime": "At least 7 working days",
-    "images": ["images/products/ir-se-intellisys-1.webp"]
+    "serviceLeadTime": "TBA",
+    "images": [
+      "images/products/ir-se-1.webp",
+      "images/products/ir-sg-1.webp"
+    ]
   },
   {
     "id": 2,
-    "name": "Ingersoll Rand SG / SGNe Intellisys Controller",
+    "name": "Ingersoll Rand XE Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
-    "partNumbers": ["39375158", "54642129"],
-    "description": "SG Intellisys, SGNe Intellisys Controller for Air Compressor, Oil Free Air Compressor and Stepper Motor drives.",
+    "model": ["Xe-70M", ""Xe-90M", "Xe-145M", "Xe-145-DCU"],
+    "description": "XE Controller for Air Compressor.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
@@ -33,28 +36,49 @@
       "No Star Delta output",
       "Compressor can't load / unload",
       "Check motor rotation",
-      "Check inlet control / inlet control system alarms",
-      "Stepper limit switch alarm",
-      "Starter fault"
+      "Low or high sump pressure",
+      "High pressure alarm"
     ],
-    "serviceLeadTime": "At least 7 working days",
-    "images": ["images/products/ir-sg-intellisys-1.webp"]
+    "serviceLeadTime": "TBA",
+    "images": ["images/products/ir-xe-1.webp"]
   },
   {
     "id": 3,
-    "name": "Kaeser Sigma Control Controller",
-    "brand": "Kaeser",
-    "brandUrl": "https://www.kaeser.com",
-    "partNumbers": ["7.3530.0", "7.4921.1"],
-    "description": "Sigma Control for Kaeser rotary screw compressors. Compatible with BS, CS, DS and FS series.",
+    "name": "Ingersoll Rand Centac Controller",
+    "brand": "Ingersoll Rand",
+    "brandUrl": "https://www.ingersollrand.com",
+    "model": [],
+    "description": "Controller for Centac Turbo Air Compressor.",
     "commonProblems": [
-      "SD card failure causing boot loop",
-      "Relay output failure",
-      "Display shows error on startup",
-      "Communication fault",
-      "Pressure sensor alarm"
+      "Unable to press front keypad membrane button",
+      "Darkened LCD or display shows funny characters",
+      "No response from controller",
+      "No Star Delta output",
+      "Compressor can't load / unload",
+      "Low or high sump pressure",
+      "High pressure alarm"
     ],
-    "serviceLeadTime": "At least 10 working days",
-    "images": ["images/products/kaeser-sigma-control-1.webp"]
-  }
+    "serviceLeadTime": "TBA",
+    "images": ["images/products/ir-centac-1.webp"]
+  },
+  {
+    "id": 4,
+    "name": "Ingersoll Rand S3 Controller",
+    "brand": "Ingersoll Rand",
+    "brandUrl": "https://www.ingersollrand.com",
+    "model": [],
+    "description": "S3 Sierra Intellisys Controller for Air Compressor.",
+    "commonProblems": [
+      "Unable to press front keypad membrane button",
+      "Darkened LCD or display shows funny characters",
+      "No response from controller",
+      "No Star Delta output",
+      "Compressor can't load / unload",
+      "Check motor rotation",
+      "Low or high sump pressure",
+      "High pressure alarm"
+    ],
+    "serviceLeadTime": "TBA",
+    "images": ["images/products/ir-s3-1.webp"]
+  },
 ]
