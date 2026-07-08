@@ -76,7 +76,7 @@ a:hover {
 /* Company name next to logo */
 .navbar-company {
 	font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
-	font-size: 1rem;
+	font-size: 1.15rem;
 	font-weight: 700;
 	color: var(--csh-dark);
 	letter-spacing: 0.04em;
@@ -131,11 +131,15 @@ a:hover {
 }
 
 .contact-badge.email {
-	background: #888888;
+	background: #f75454;
 }
 
 .contact-badge.tel {
 	background: #2196F3;
+}
+
+.contact-badge.office {
+	background: #0070e0;
 }
 
 .contact-badge.wechat {
@@ -144,6 +148,37 @@ a:hover {
 
 .contact-badge.line {
 	background: #00B900;
+}
+
+.scroll-top-btn {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: var(--csh-red);
+	color: var(--csh-white);
+	border: none;
+	font-size: 1.8rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	opacity: 0;
+	transform: translateY(10px);
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	z-index: 999;
+}
+
+.scroll-top-btn.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+	background: var(--csh-red-dark);
 }
 
 /* --- Hero --- */
@@ -453,49 +488,6 @@ a:hover {
 	color: var(--csh-red);
 }
 
-/* --- Footer --- */
-.footer {
-	background-color: var(--csh-dark);
-	border-top: 2px solid var(--csh-red);
-	padding: 2.5rem 0 1.5rem;
-	color: var(--csh-grey-400);
-	font-size: 0.82rem;
-}
-
-.footer-logo {
-	height: 48px;
-	width: auto;
-}
-
-.footer-nav-heading {
-	font-size: 0.72rem;
-	font-weight: 700;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	color: #cccccc;
-	margin-bottom: 0.75rem;
-}
-
-.footer-link {
-	display: block;
-	color: var(--csh-grey-400);
-	font-size: 0.82rem;
-	margin-bottom: 0.35rem;
-	transition: color var(--transition);
-}
-
-.footer-link:hover {
-	color: var(--csh-red);
-}
-
-.footer-copy {
-	font-size: 0.75rem;
-	color: #7a7a7a;
-	margin-top: 1.5rem;
-	padding-top: 1rem;
-	border-top: 1px solid #333333;
-}
-
 /* --- Modals --- */
 .modal-content {
 	background: var(--csh-white);
@@ -798,72 +790,6 @@ a:hover {
 	color: var(--csh-grey-600);
 	margin: 0;
 	line-height: 1.5;
-}
-
-/* ============================================================
-   DUAL CONTACT BADGES (navbar + footer)
-   ============================================================ */
-
-/* Navbar wrap */
-.navbar-contact-wrap {
-	gap: 0.5rem;
-}
-
-.navbar-badge-group {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 3px;
-}
-
-.navbar-badge-label {
-	font-size: 0.6rem;
-	font-weight: 700;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	color: var(--csh-grey-400);
-	white-space: nowrap;
-}
-
-.navbar-badge-divider {
-	width: 1px;
-	height: 28px;
-	background: var(--csh-grey-200);
-	margin: 0 0.25rem;
-	align-self: center;
-}
-
-/* Footer contact group labels */
-.footer-contact-group-label {
-	font-size: 0.65rem;
-	font-weight: 700;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	color: var(--csh-grey-400);
-	margin-bottom: 0.4rem;
-}
-
-/* Responsive — stack badge groups on mobile */
-@media (max-width: 991px) {
-	.navbar-contact-wrap {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		margin-top: 0.75rem;
-		padding-top: 0.75rem;
-		border-top: 1px solid var(--csh-grey-200);
-		width: 100%;
-	}
-
-	.navbar-badge-divider {
-		width: 100%;
-		height: 1px;
-		margin: 0.25rem 0;
-	}
-
-	.navbar-badge-group {
-		align-items: flex-start;
-	}
 }
 
 /* ============================================================
@@ -1199,4 +1125,113 @@ a:hover {
 	color: var(--csh-grey-400);
 	padding: 0 0.25rem;
 	line-height: 36px;
+}
+
+/* --- Footer --- */
+.footer {
+	background-color: var(--csh-dark);
+	border-top: 2px solid var(--csh-red);
+	padding: 1.8rem 0 0.5rem 0;
+	color: var(--csh-grey-400);
+	font-size: 0.82rem;
+}
+
+.footer-logo {
+	height: 48px;
+	width: auto;
+}
+
+.footer-nav-heading {
+	font-size: 0.85rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #cccccc;
+	margin-bottom: 0.75rem;
+}
+
+.footer-link {
+	display: block;
+	color: var(--csh-grey-400);
+	font-size: 0.75rem;
+	margin-bottom: 0.35rem;
+	transition: color var(--transition);
+}
+
+.footer-link:hover {
+	color: var(--csh-red);
+}
+
+.footer-copy {
+	font-size: 0.75rem;
+	color: #7a7a7a;
+	margin-top: 1.5rem;
+	padding-top: 1rem;
+	border-top: 1px solid #333333;
+}
+
+/* ============================================================
+   DUAL CONTACT BADGES (navbar + footer)
+   ============================================================ */
+
+/* Navbar wrap */
+.navbar-contact-wrap {
+	gap: 0.5rem;
+}
+
+.navbar-badge-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3px;
+}
+
+.navbar-badge-label {
+	font-size: 0.6rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--csh-grey-600);
+	white-space: nowrap;
+}
+
+.navbar-badge-divider {
+	width: 2px;
+	height: 48px;
+	background: var(--csh-grey-200);
+	margin: 0 0.25rem;
+	align-self: center;
+}
+
+/* Footer contact group labels */
+.footer-contact-group-label {
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--csh-grey-400);
+	margin-bottom: 0.4rem;
+}
+
+/* Responsive — stack badge groups on mobile */
+@media (max-width: 991px) {
+	.navbar-contact-wrap {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-top: 0.75rem;
+		padding-top: 0.75rem;
+		border-top: 1px solid var(--csh-grey-200);
+		width: 100%;
+	}
+
+	.navbar-badge-divider {
+		width: 100%;
+		height: 1px;
+		margin: 0.25rem 0;
+	}
+
+	.navbar-badge-group {
+		align-items: flex-start;
+	}
 }

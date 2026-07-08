@@ -67,11 +67,15 @@
                   </a>
                   <a href="mailto:s_cheng_88@hotmail.com"
                     class="contact-badge email" title="Email: s_cheng_88@hotmail.com">
-                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-envelope-at-fill"></i>
                   </a>
                   <a href="tel:+60122911125"
                     class="contact-badge tel" title="Call: +60 12-291 1125">
                     <i class="bi bi-telephone-fill"></i>
+                  </a>
+                  <a href="office:+60380613094"
+                    class="contact-badge office" title="Office: +60 3-8061 3094">
+                    <i class="bi bi-briefcase-fill"></i>
                   </a>
                   <a href="#wechat-modal" data-bs-toggle="modal"
                     class="contact-badge wechat" title="WeChat">
@@ -93,11 +97,15 @@
                   </a>
                   <a href="mailto:stephyee8666@gmail.com"
                     class="contact-badge email" title="Email: stephyee8666@gmail.com">
-                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-envelope-at-fill"></i>
                   </a>
                   <a href="tel:+60122311781"
                     class="contact-badge tel" title="Call: +60 12-231 1781">
                     <i class="bi bi-telephone-fill"></i>
+                  </a>
+                  <a href="office:+60380613094"
+                    class="contact-badge office" title="Office: +60 3-8061 3094">
+                    <i class="bi bi-briefcase-fill"></i>
                   </a>
                 </div>
               </div>
