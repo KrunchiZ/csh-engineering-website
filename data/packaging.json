@@ -6,7 +6,10 @@
     "brand": "OEM",
     "description": "Packs products in horizontal form — bread, candy, biscuit, wafer, vegetables and similar regular-shaped items.",
     "models": [],
-    "images": ["images/products/horizontal-wrapping-machine-1.webp"]
+    "images": [
+      "images/products/horizontal-wrapping-machine-1.webp",
+      "images/products/horizontal-wrapping-machine-2.webp"
+    ]
   },
   {
     "id": 2,
@@ -15,7 +18,11 @@
     "brand": "OEM",
     "description": "High-accuracy, high-speed weigher for candy, biscuit, nuts, screw nails, granules, salty vegetables and similar products.",
     "models": [],
-    "images": ["images/products/multihead-weigher-1.webp"]
+    "images": [
+      "images/products/multihead-weigher-1.webp",
+      "images/products/multihead-weigher-2.webp",
+      "images/products/multihead-weigher-3.webp"
+    ]
   },
   {
     "id": 3,
@@ -24,7 +31,12 @@
     "brand": "OEM",
     "description": "Complete VFFS system with multihead weigher, Z-conveyor, platform and output conveyor. Suitable for candy, biscuit, nuts, screw nails, granules, salty vegetables and similar products.",
     "models": ["CSH-320", "CSH-420", "CSH-520"],
-    "images": ["images/products/vffs-machine-1.webp"]
+    "images": [
+      "images/products/vffs-machine-1.webp",
+      "images/products/vffs-machine-2.webp",
+      "images/products/vffs-machine-3.webp",
+      "images/products/vffs-machine-4.webp"
+    ]
   },
   {
     "id": 4,
@@ -33,6 +45,10 @@
     "brand": "OEM",
     "description": "Semi-automatic auger filling machine for powder dosing products — spice powder, washing powder, granules, nuts and similar products.",
     "models": [],
-    "images": ["images/products/auger-filling-machine-1.webp"]
+    "images": [
+      "images/products/auger-filling-machine-1.webp",
+      "images/products/auger-filling-machine-2.webp",
+      "images/products/auger-filling-machine-3.webp"
+    ]
   }
 ]

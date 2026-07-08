@@ -151,7 +151,7 @@ a:hover {
 	background-color: var(--csh-white);
 	background-image: url('../images/banner-hero.webp');
 	background-size: cover;
-	background-position: center;
+	background-position: top center;
 	background-repeat: no-repeat;
 	border-bottom: 1px solid var(--csh-grey-200);
 	padding: 5rem 0 4rem;
@@ -560,8 +560,28 @@ a:hover {
    ============================================================ */
 .page-header {
 	background: var(--csh-white);
+	background-image: url('../images/banner-hero.webp');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
 	border-bottom: 1px solid var(--csh-grey-200);
 	padding: 3rem 0 2.5rem;
+	position: relative;
+	z-index: 1;
+}
+
+.page-header::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(255, 255, 255, 0.6);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.page-header .container {
+	position: relative;
+	z-index: 1;
 }
 
 .page-header-eyebrow {
