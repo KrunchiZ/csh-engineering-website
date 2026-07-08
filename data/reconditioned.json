@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "IR SG/SGNe Intellisys Display Board",
+    "name": "IR SG / SGNe Intellisys Display Board",
     "category": "Air Compressor Controller",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
-    "description": "Reconditioned display board for Ingersoll Rand SG/SG Nirvana Intellisys.",
+    "description": "Reconditioned Ingersoll Rand SG / SG Nirvana (SGNe) Intellisys controller.",
     "images": [
       "https://placehold.co/600x400?text=IR+Display+Board+1",
       "https://placehold.co/600x400?text=IR+Display+Board+2"
@@ -17,16 +17,16 @@
     "category": "Air Compressor Controller",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
-    "description": "Reconditioned main controller board for Ingersoll Rand Centac Turbo Air Compressor.",
+    "description": "Reconditioned main controller for Ingersoll Rand Centac Turbo Air Compressor.",
     "images": ["https://placehold.co/600x400?text=Kaeser+Main+Board"]
   },
   {
     "id": 3,
-    "name": "IR SE Sierra Intellisys Controller",
+    "name": "IR SE / SE Sierra Intellisys Controller",
     "category": "Air Compressor Controller",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
-    "description": "Reconditioned display board for Ingersoll Rand SG/SG Nirvana Intellisys.",
+    "description": "Reconditioned Ingersoll Rand SE / SE Sierra Intellisys Controller.",
     "images": [
       "https://placehold.co/600x400?text=Wrapper+Panel+1",
       "https://placehold.co/600x400?text=Wrapper+Panel+2"
@@ -38,7 +38,7 @@
     "category": "Air Compressor Controller",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
-    "description": "Reconditioned display board for Ingersoll Rand Red-eyed Intellisys.",
+    "description": "Reconditioned Ingersoll Rand Red-eyed Intellisys Controller.",
     "images": [
       "https://placehold.co/600x400?text=Wrapper+Panel+1",
       "https://placehold.co/600x400?text=Wrapper+Panel+2"
