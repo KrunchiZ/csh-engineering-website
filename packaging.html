@@ -148,9 +148,9 @@
               <h2 class="controller-title">${item.name}</h2>
               <p class="controller-desc">${item.description}</p>
               ${models}
-              ${item.manufacturer ? `
+              ${item.brand ? `
                 <div class="controller-leadtime">
-                  <i class="bi bi-building me-2"></i>Manufacturer: <strong>${item.manufacturer}</strong>
+                  <i class="bi bi-building me-2"></i>Brand: <strong>${item.brand}</strong>
                 </div>` : ''}
               <a href="https://wa.me/60122911125?text=Hi, I would like to enquire about ${encodeURIComponent(item.name)}"
                  target="_blank" rel="noopener noreferrer" class="btn-csh mt-3 d-inline-block">
