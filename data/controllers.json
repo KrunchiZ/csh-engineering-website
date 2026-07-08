@@ -19,7 +19,19 @@
     "serviceLeadTime": "TBA",
     "images": [
       "images/products/ir-se-1.webp",
-      "images/products/ir-sg-1.webp"
+      "images/products/ir-se-2.webp",
+      "images/products/ir-sg-1.webp",
+      "images/products/ir-sg-2.webp",
+      "images/products/ir-red-eyed-1.webp",
+      "images/products/ir-sg-3.webp",
+      "images/products/ir-sg-4.webp",
+      "images/products/ir-sg-5.webp",
+      "images/products/ir-sg-6.webp",
+      "images/products/ir-sg-7.webp",
+      "images/products/ir-sg-8.webp",
+      "images/products/ir-sg-power-supply-1.webp",
+      "images/products/ir-sequence-board-1.webp",
+      "images/products/ir-starter-interface-1.webp"
     ]
   },
   {
@@ -40,7 +52,11 @@
       "High pressure alarm"
     ],
     "serviceLeadTime": "TBA",
-    "images": ["images/products/ir-xe-1.webp"]
+    "images": [
+      "images/products/ir-xe-1.webp",
+      "images/products/ir-xe-2.webp",
+      "images/products/ir-xe-3.webp"
+    ]
   },
   {
     "id": 3,
@@ -59,7 +75,11 @@
       "High pressure alarm"
     ],
     "serviceLeadTime": "TBA",
-    "images": ["images/products/ir-centac-1.webp"]
+    "images": [
+      "images/products/ir-centac-3.webp",
+      "images/products/ir-centac-2.webp",
+      "images/products/ir-centac-1.webp"
+    ]
   },
   {
     "id": 4,
@@ -80,5 +100,30 @@
     ],
     "serviceLeadTime": "TBA",
     "images": ["images/products/ir-s3-1.webp"]
+  },
+  {
+    "id": 5,
+    "name": "Spare Parts for Ingersoll Rand Air Compressors",
+    "brand": "OEM",
+    "brandUrl": "",
+    "models": [],
+    "description": "Stepper Motor, Temperature sensor, Pressure sensor, Solenoid Valve and various other parts for Ingersoll Rand air compressors.",
+    "commonProblems": [],
+    "serviceLeadTime": "TBA",
+    "images": [
+      "images/products/spareparts-01.webp",
+      "images/products/spareparts-02.webp",
+      "images/products/spareparts-03.webp",
+      "images/products/spareparts-04.webp",
+      "images/products/spareparts-05.webp",
+      "images/products/spareparts-06.webp",
+      "images/products/spareparts-07.webp",
+      "images/products/spareparts-08.webp",
+      "images/products/spareparts-09.webp",
+      "images/products/spareparts-10.webp",
+      "images/products/spareparts-11.webp",
+      "images/products/spareparts-12.webp",
+      "images/products/spareparts-13.webp"
+    ]
   }
 ]
