@@ -28,7 +28,7 @@
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com/en-lac/products/air-compressors/controls-and-automation/compressor-system-controller-xe-145m-series-rotary",
     "models": ["Xe-70M", "Xe-90M", "Xe-145M", "Xe-145-DCU", "Xe-145F"],
-    "description": "Xe Series Air Compressor Controller.",
+    "description": "Xe Series CENTAC Air Compressor Controller.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
@@ -44,11 +44,11 @@
   },
   {
     "id": 3,
-    "name": "Ingersoll Rand Legacy CENTAC Controller",
+    "name": "Ingersoll Rand Legacy CENTAC MP3 Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com/en/products/air-compressors/centrifugal-compressors",
     "models": ["MP3", "CMC"],
-    "description": "Centac Air Compressor Controller.",
+    "description": "Legacy CENTAC CMC Air Compressor Controller.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
@@ -65,8 +65,8 @@
     "id": 4,
     "name": "Ingersoll Rand S3 Intellisys Controller",
     "brand": "Ingersoll Rand",
-    "brandUrl": "https://www.ingersollrand.com",
-    "models": [],
+    "brandUrl": "https://www.ingersollrand.com/en-lac/products/air-compressors/oil-flooded-rotary-air-compressors",
+    "models": ["S3"],
     "description": "S3 Intellisys Air Compressor Controller.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
@@ -80,5 +80,5 @@
     ],
     "serviceLeadTime": "TBA",
     "images": ["images/products/ir-s3-1.webp"]
-  },
+  }
 ]

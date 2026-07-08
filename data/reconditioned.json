@@ -7,8 +7,8 @@
     "condition": "Reconditioned",
     "description": "Reconditioned Ingersoll Rand SG / SG Nirvana (SGNe) Intellisys controller.",
     "images": [
-      "https://placehold.co/600x400?text=IR+Display+Board+1",
-      "https://placehold.co/600x400?text=IR+Display+Board+2"
+      "https://placehold.co/600x400?text=Wrapper+Panel+1",
+      "https://placehold.co/600x400?text=Wrapper+Panel+2"
     ]
   },
   {
@@ -18,7 +18,7 @@
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
     "description": "Reconditioned main controller for Ingersoll Rand Legacy CENTAC CMC Air Compressor.",
-    "images": ["https://placehold.co/600x400?text=Kaeser+Main+Board"]
+    "images": ["https://placehold.co/600x400?text=Wrapper+Panel+1"]
   },
   {
     "id": 3,
@@ -31,7 +31,7 @@
       "https://placehold.co/600x400?text=Wrapper+Panel+1",
       "https://placehold.co/600x400?text=Wrapper+Panel+2"
     ]
-  }
+  },
   {
     "id": 4,
     "name": "IR Red-eyed Intellisys Controller",
@@ -43,8 +43,8 @@
       "https://placehold.co/600x400?text=Wrapper+Panel+1",
       "https://placehold.co/600x400?text=Wrapper+Panel+2"
     ]
-  }
-{
+  },
+  {
     "id": 5,
     "name": "IR SG Intellisys Controller Power Supply",
     "category": "Air Compressor Controller",
