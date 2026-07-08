@@ -27,7 +27,7 @@
     "name": "Ingersoll Rand XE Controller",
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com",
-    "models": ["Xe-70M", ""Xe-90M", "Xe-145M", "Xe-145-DCU"],
+    "models": ["Xe-70M", "Xe-90M", "Xe-145M", "Xe-145-DCU"],
     "description": "XE Controller for Air Compressor.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
