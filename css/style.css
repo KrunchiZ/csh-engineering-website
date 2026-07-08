@@ -416,7 +416,7 @@ a:hover {
 }
 
 .btn-csh-outline {
-	background-color: transparent;
+	background-color: var(--csh-white);
 	color: var(--csh-red-dark);
 	font-weight: 700;
 	font-size: 0.8rem;
