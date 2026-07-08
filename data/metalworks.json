@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Fire Alarm Control Panel (FACP) Wall Enclosure",
     "category": "Fire Safety & Emergency Enclosures",
-    "manufacturer": "Malaysia",
+    "brand": "Malaysia OEM",
     "description": "Laser cut wall-mounted case for Fire Alarm Control Panel (FACP) with powder coating finish.",
     "models": ["Custom"],
     "images": ["images/products/facp-wall-enclosure-1.webp"]
@@ -12,7 +12,7 @@
     "id": 2,
     "name": "Fire Alarm Control Panel (FACP) Cabinet Enclosure",
     "category": "Fire Safety & Emergency Enclosures",
-    "manufacturer": "Malaysia",
+    "brand": "OEM",
     "description": "Laser cut cabinet for Fire Alarm Control Panel (FACP) with powder coating finish.",
     "models": ["Custom"],
     "images": ["images/products/facp-cabinet-enclosure-1.webp"]
@@ -21,7 +21,7 @@
     "id": 3,
     "name": "Emergency Fire Telephone Enclosure",
     "category": "Fire Safety & Emergency Enclosures",
-    "manufacturer": "Malaysia",
+    "brand": "OEM",
     "description": "Laser cut wall-mounted case for emergency telephone with powder coating finish.",
     "models": ["Custom"],
     "images": ["images/products/telephone-enclosure-1.webp"]
@@ -30,7 +30,7 @@
     "id": 4,
     "name": "Intercom Enclosure",
     "category": "Telecommunications & IT Enclosures",
-    "manufacturer": "Malaysia",
+    "brand": "OEM",
     "description": "Laser cut wall-mounted case for intercom with powder coating finish.",
     "models": ["Custom"],
     "images": ["images/products/intercom-enclosure-1.webp"]
