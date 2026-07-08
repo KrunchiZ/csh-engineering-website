@@ -147,5 +147,50 @@
     "images": [
       "images/products/ir-pressure-transducer-1.webp"
     ]
+  },
+  {
+    "id": 14,
+    "name": "IR CENTAC Turbo Air Compressor Switch Board",
+    "category": "Air Compressor",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned switch board for Ingersoll Rand CENTAC Turbo Air Compressor.",
+    "images": [
+      "images/products/ir-centac-switch-1.webp",
+      "images/products/ir-centac-switch-2.webp",
+      "images/products/ir-centac-switch-3.webp",
+      "images/products/ir-centac-switch-4.webp"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "IR CENTAC MCP-MP3 Faceplate",
+    "category": "Air Compressor",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned faceplate for Ingersoll Rand CENTAC MCP-MP3 Air Compressor.",
+    "images": [
+      "images/products/ir-centac-mcp-mp3-faceplate-1.webp",
+      "images/products/ir-centac-mcp-mp3-faceplate-2.webp",
+      "images/products/ir-centac-mcp-mp3-faceplate-3.webp"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "IHI Turbo Air Compressor Controller - Keyence Touch Screen VT2-5SB",
+    "category": "Air Compressor",
+    "brand": "IHI",
+    "condition": "Reconditioned",
+    "description": "Reconditioned Keyence Touch Screen VT2-5SB suitable for IHI Turbo Air Compressor Controller.",
+    "images": [
+      "images/products/ihi-keyence-1.webp",
+      "images/products/ihi-keyence-2.webp",
+      "images/products/ihi-keyence-3.webp",
+      "images/products/ihi-keyence-4.webp",
+      "images/products/ihi-keyence-5.webp",
+      "images/products/ihi-keyence-6.webp",
+      "images/products/ihi-keyence-7.webp",
+      "images/products/ihi-keyence-8.webp"
+    ]
   }
 ]
