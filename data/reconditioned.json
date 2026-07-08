@@ -2,58 +2,150 @@
   {
     "id": 1,
     "name": "IR SG / SGNe Intellisys Controller",
-    "category": "Air Compressor Controller",
+    "category": "Air Compressor",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
     "description": "Reconditioned Ingersoll Rand SG / SG Nirvana (SGNe) Intellisys controller.",
     "images": [
-      "https://placehold.co/600x400?text=Wrapper+Panel+1",
-      "https://placehold.co/600x400?text=Wrapper+Panel+2"
+      "images/products/ir-sg-1.webp"
     ]
   },
   {
     "id": 2,
-    "name": "IR Legacy CENTAC MP3 Controller",
-    "category": "Air Compressor Controller",
+    "name": "IR CENTAC MP3 Controller",
+    "category": "Air Compressor",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
     "description": "Reconditioned main controller for Ingersoll Rand Legacy CENTAC CMC Air Compressor.",
-    "images": ["https://placehold.co/600x400?text=Wrapper+Panel+1"]
+    "images": [
+      "images/products/ir-centac-1.webp",
+      "images/products/ir-centac-2.webp"
+    ]
   },
   {
     "id": 3,
     "name": "IR SE / SE Sierra Intellisys Controller",
-    "category": "Air Compressor Controller",
+    "category": "Air Compressor",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
     "description": "Reconditioned Ingersoll Rand SE / SE Sierra Intellisys Controller.",
     "images": [
-      "https://placehold.co/600x400?text=Wrapper+Panel+1",
-      "https://placehold.co/600x400?text=Wrapper+Panel+2"
+      "images/products/ir-se-1.webp",
+      "images/products/ir-se-2.webp",
+      "images/products/ir-se-3.webp"
     ]
   },
   {
     "id": 4,
     "name": "IR Red-eyed Intellisys Controller",
-    "category": "Air Compressor Controller",
+    "category": "Air Compressor",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
     "description": "Reconditioned Ingersoll Rand Red-eyed Intellisys Controller.",
     "images": [
-      "https://placehold.co/600x400?text=Wrapper+Panel+1",
-      "https://placehold.co/600x400?text=Wrapper+Panel+2"
+      "images/products/ir-red-eyed-1.webp"
     ]
   },
   {
     "id": 5,
     "name": "IR SG Intellisys Controller Power Supply",
-    "category": "Air Compressor Controller",
+    "category": "Air Compressor",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
     "description": "Reconditioned power supply for Ingersoll Rand SG Intellisys.",
     "images": [
-      "https://placehold.co/600x400?text=Wrapper+Panel+1",
-      "https://placehold.co/600x400?text=Wrapper+Panel+2"
+      "images/products/ir-sg-power-supply-1.webp"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "IR SE Sierra Intellisys Controller Sequence Board",
+    "category": "Air Compressor",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned sequence board for Ingersoll Rand SE Sierra Intellisys Controller.",
+    "images": [
+      "images/products/ir-sequence-board-1.webp"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "IR SE Sierra Intellisys Controller Starter Interfacce",
+    "category": "Air Compressor",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned starter interface for Ingersoll Rand SE Sierra Intellisys Controller.",
+    "images": [
+      "images/products/ir-starter-interface-1.webp"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "IR Air Compressor Stepper Motor",
+    "category": "Air Compressor",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned stepper motor for Ingersoll Rand Air Compressor.",
+    "images": [
+      "images/products/ir-stepper-motor-1.webp",
+      "images/products/spareparts-13.webp",
+      "images/products/ir-stepper-motor-2.webp"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "KAESER Sigma Control Air Compressor Controller",
+    "category": "Air Compressor",
+    "brand": "Kaesar",
+    "condition": "Reconditioned",
+    "description": "Reconditioned Kaesar Sigma Control Air Compressor Controller.",
+    "images": [
+      "images/products/kaesar-sigma-1.webp",
+      "images/products/kaesar-sigma-2.webp"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "IR CENTAC Operator User Interface (OUI)",
+    "category": "Air Compressor",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned operator user interface for Ingersoll Rand CENTAC Air Compressor Controller.",
+    "images": [
+      "images/products/ir-centac-oui-1.webp"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "IR CENTAC Operator User Interface (OUI) LCD Display",
+    "category": "Air Compressor",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned LCD display for Ingersoll Rand CENTAC Operator User Interface.",
+    "images": [
+      "images/products/ir-centac-oui-lcd-1.webp"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "IR SE Intellisys Controller LCD Display",
+    "category": "Air Compressor",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned LCD display for Ingersoll Rand SE Intellisys Controller.",
+    "images": [
+      "images/products/ir-se-lcd-1.webp"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "PRESSURE TRANSDUCER",
+    "category": "Air Compressor",
+    "brand": "Ingersoll Rand",
+    "condition": "Reconditioned",
+    "description": "Reconditioned pressure transducer for air compressors.",
+    "images": [
+      "images/products/ir-pressure-transducer-1.webp"
     ]
   }
 ]

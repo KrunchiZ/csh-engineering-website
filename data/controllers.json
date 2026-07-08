@@ -5,7 +5,7 @@
     "brand": "Ingersoll Rand",
     "brandUrl": "https://www.ingersollrand.com/en/products/air-compressors/oil-free-air-compressors",
     "models": ["39817655", "22128763", "39375158", "54642129"],
-    "description": "SE / SE Sierra Intellisys and SG / SG Nirvana (SGNe) Intellisys Air Compressor Controller.",
+    "description": "SE / SE Sierra Intellisys and SG / SG Nirvana (SGN) Intellisys Air Compressor Controller.",
     "commonProblems": [
       "Unable to press front keypad membrane button",
       "Darkened LCD or display shows funny characters",
@@ -29,6 +29,8 @@
       "images/products/ir-sg-6.webp",
       "images/products/ir-sg-7.webp",
       "images/products/ir-sg-8.webp",
+      "images/products/ir-sgn-1.webp",
+      "images/products/ir-red-eyed-2.webp",
       "images/products/ir-sg-power-supply-1.webp",
       "images/products/ir-sequence-board-1.webp",
       "images/products/ir-starter-interface-1.webp"
@@ -55,7 +57,8 @@
     "images": [
       "images/products/ir-xe-1.webp",
       "images/products/ir-xe-2.webp",
-      "images/products/ir-xe-3.webp"
+      "images/products/ir-xe-3.webp",
+      "images/products/ir-xe-4.webp"
     ]
   },
   {
