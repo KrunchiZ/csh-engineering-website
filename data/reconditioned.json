@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "IR SG / SGNe Intellisys Display Board",
+    "name": "IR SG / SGNe Intellisys Controller",
     "category": "Air Compressor Controller",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
@@ -13,11 +13,11 @@
   },
   {
     "id": 2,
-    "name": "IR Centac MP3 Board",
+    "name": "IR Legacy CENTAC MP3 Controller",
     "category": "Air Compressor Controller",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
-    "description": "Reconditioned main controller for Ingersoll Rand Centac Turbo Air Compressor.",
+    "description": "Reconditioned main controller for Ingersoll Rand Legacy CENTAC CMC Air Compressor.",
     "images": ["https://placehold.co/600x400?text=Kaeser+Main+Board"]
   },
   {
@@ -46,7 +46,7 @@
   }
 {
     "id": 5,
-    "name": "IR SG Intellisys Controller Power Supply Unit",
+    "name": "IR SG Intellisys Controller Power Supply",
     "category": "Air Compressor Controller",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
