@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.cshengineering.com/sitemap.xml
+Sitemap: https://cshengineering.com/sitemap.xml
