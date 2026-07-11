@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Emergency Fire Telephone Intercom Enclosure",
-    "category": "Fire Safety & Emergency Enclosures",
+    "name": "Firefighter Telephone Communication System (Intercom) Enclosure",
+    "category": "Fire Life Safety",
     "brand": "OEM",
-    "description": "Laser cut wall-mounted case for emergency telephone with powder coating finish.",
+    "description": "Laser cut wall-mounted case for intercom system with powder coating finish.",
     "models": ["Custom"],
     "images": [
       "images/products/metal-telephone-01.webp",
@@ -13,19 +13,23 @@
   },
   {
     "id": 2,
-    "name": "Fire Alarm Control Panel (FACP) Wall Enclosure",
-    "category": "Fire Safety & Emergency Enclosures",
+    "name": "Fire Alarm Control Panel (FACP) Wall-mounted Enclosure",
+    "category": "Fire Life Safety",
     "brand": "OEM",
     "description": "Laser cut wall-mounted case for Fire Alarm Control Panel (FACP) with powder coating finish.",
     "models": ["Custom"],
     "images": [
-      "images/products/metal-wall-01.webp"
+      "images/products/metal-wall-01.webp",
+      "images/products/metal-wall-02.webp",
+      "images/products/metal-wall-03.webp",
+      "images/products/metal-wall-04.webp",
+      "images/products/metal-wall-05.webp"
     ]
   },
   {
     "id": 3,
     "name": "Fire Alarm Control Panel (FACP) Standing Cabinet Enclosure",
-    "category": "Fire Safety & Emergency Enclosures",
+    "category": "Fire Life Safety",
     "brand": "OEM",
     "description": "Laser cut standing cabinet for Fire Alarm Control Panel (FACP) with powder coating finish.",
     "models": ["Custom"],
@@ -48,19 +52,6 @@
       "images/products/metal-na-aluminium-round-poles-01.webp",
       "images/products/metal-na-aluminium-round-poles-02.webp",
       "images/products/metal-na-aluminium-round-poles-03.webp"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Glass Plates with Sitckers",
-    "category": "Fire Safety & Emergency Enclosures",
-    "brand": "OEM",
-    "description": "Aluminium square poles for construction and infrastructure applications.",
-    "models": ["Custom"],
-    "images": [
-      "images/products/metal-na-aluminium-square-poles-01.webp",
-      "images/products/metal-na-aluminium-square-poles-02.webp",
-      "images/products/metal-na-aluminium-square-poles-03.webp"
     ]
   }
 ]
