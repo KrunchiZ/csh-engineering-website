@@ -70,7 +70,7 @@
   },
   {
     "id": 7,
-    "name": "IR SE Sierra Intellisys Controller Starter Interfacce",
+    "name": "IR SE Sierra Intellisys Controller Starter Interface",
     "category": "Air Compressor",
     "brand": "Ingersoll Rand",
     "condition": "Reconditioned",
@@ -96,7 +96,7 @@
     "id": 9,
     "name": "KAESER Sigma Control Air Compressor Controller",
     "category": "Air Compressor",
-    "brand": "Kaesar",
+    "brand": "Kaeser",
     "condition": "Reconditioned",
     "description": "Reconditioned Kaesar Sigma Control Air Compressor Controller.",
     "images": [
