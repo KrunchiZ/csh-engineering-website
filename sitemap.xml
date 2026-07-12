@@ -8,31 +8,31 @@
   </url>
 
   <url>
-    <loc>https://cshengineering.com/controllers.html</loc>
+    <loc>https://cshengineering.com/controllers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://cshengineering.com/packaging.html</loc>
+    <loc>https://cshengineering.com/packaging</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://cshengineering.com/metalworks.html</loc>
+    <loc>https://cshengineering.com/metalworks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://cshengineering.com/reconditioned.html</loc>
+    <loc>https://cshengineering.com/reconditioned</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://cshengineering.com/about.html</loc>
+    <loc>https://cshengineering.com/about</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
