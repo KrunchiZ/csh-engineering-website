@@ -73,7 +73,7 @@
                     class="contact-badge tel" title="Call: +60 12-291 1125">
                     <i class="bi bi-telephone-fill"></i>
                   </a>
-                  <a href="office:+60380613094"
+                  <a href="tel:+60380613094"
                     class="contact-badge office" title="Office: +60 3-8061 3094">
                     <i class="bi bi-briefcase-fill"></i>
                   </a>
@@ -103,7 +103,7 @@
                     class="contact-badge tel" title="Call: +60 12-231 1781">
                     <i class="bi bi-telephone-fill"></i>
                   </a>
-                  <a href="office:+60380613094"
+                  <a href="tel:+60380613094"
                     class="contact-badge office" title="Office: +60 3-8061 3094">
                     <i class="bi bi-briefcase-fill"></i>
                   </a>
